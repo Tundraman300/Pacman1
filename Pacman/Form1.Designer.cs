@@ -41,9 +41,10 @@ namespace Pacman
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(286, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "This is a Test";
+            this.label1.Text = "This is a Test edit";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace Pacman
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void ShowInstrScreen(object sender, EventArgs e)
+        {
+            var newForm = new InstructionsScreen();
+            newForm.Show();
+        }
+
+        private void ShowGameScreen(object sender, EventArgs e)
+        {
+            var newForm = new GameScreen();
+            newForm.Show();
         }
 
         private void StartButton_MouseEnter(object sender, EventArgs e)

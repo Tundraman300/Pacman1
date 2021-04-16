@@ -1,7 +1,7 @@
 ﻿
 namespace Pacman
 {
-    partial class Form1
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -47,6 +47,7 @@ namespace Pacman
             this.StartButton.TabIndex = 0;
             this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.ShowGameScreen);
             this.StartButton.MouseEnter += new System.EventHandler(this.StartButton_MouseEnter);
             this.StartButton.MouseLeave += new System.EventHandler(this.StartButton_MouseLeave);
             // 
@@ -64,10 +65,11 @@ namespace Pacman
             this.InstructionsButton.TabIndex = 1;
             this.InstructionsButton.Text = "How To Play";
             this.InstructionsButton.UseVisualStyleBackColor = true;
+            this.InstructionsButton.Click += new System.EventHandler(this.ShowInstrScreen);
             this.InstructionsButton.MouseEnter += new System.EventHandler(this.InstrButton_MouseEnter);
             this.InstructionsButton.MouseLeave += new System.EventHandler(this.InstrButton_MouseLeave);
             // 
-            // Form1
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,8 +81,8 @@ namespace Pacman
             this.Controls.Add(this.StartButton);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Text = "Pacman";
+            this.Name = "MainMenu";
+            this.Text = "Main Menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

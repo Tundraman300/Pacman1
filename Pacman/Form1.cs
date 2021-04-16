@@ -17,9 +17,24 @@ namespace Pacman
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void StartButton_MouseEnter(object sender, EventArgs e)
         {
+            StartButton.ForeColor = Color.Silver;
+        }
 
+        private void StartButton_MouseLeave(object sender, EventArgs e)
+        {
+            StartButton.ForeColor = Color.White;
+        }
+
+        private void InstrButton_MouseEnter(object sender, EventArgs e)
+        {
+            InstructionsButton.ForeColor = Color.Silver;
+        }
+
+        private void InstrButton_MouseLeave(object sender, EventArgs e)
+        {
+            InstructionsButton.ForeColor = Color.White;
         }
     }
 }

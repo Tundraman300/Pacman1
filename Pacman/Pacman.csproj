@@ -101,5 +101,8 @@
   <ItemGroup>
     <None Include="Resources\Main Menu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WASD.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

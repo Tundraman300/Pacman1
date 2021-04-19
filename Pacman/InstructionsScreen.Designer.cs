@@ -46,7 +46,7 @@ namespace Pacman
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(313, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 39);
+            this.label1.Size = new System.Drawing.Size(148, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Controls:";
             // 
@@ -79,7 +79,7 @@ namespace Pacman
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(291, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 39);
+            this.label4.Size = new System.Drawing.Size(193, 38);
             this.label4.TabIndex = 2;
             this.label4.Text = "Instructions:";
             // 
@@ -110,7 +110,7 @@ namespace Pacman
             this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
             this.label7.Location = new System.Drawing.Point(472, 82);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(135, 87);
+            this.label7.Size = new System.Drawing.Size(158, 87);
             this.label7.TabIndex = 6;
             this.label7.Text = "label7";
             // 

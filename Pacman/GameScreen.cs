@@ -21,5 +21,10 @@ namespace Pacman
         {
 
         }
+
+        private void wall22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,5 +26,10 @@ namespace Pacman
         {
 
         }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

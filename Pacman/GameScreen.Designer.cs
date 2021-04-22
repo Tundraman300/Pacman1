@@ -29,6 +29,7 @@ namespace Pacman
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Pellet1 = new System.Windows.Forms.PictureBox();
             this.wall50 = new System.Windows.Forms.PictureBox();
             this.wall46 = new System.Windows.Forms.PictureBox();
@@ -146,6 +147,8 @@ namespace Pacman
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
             this.Pellet55 = new System.Windows.Forms.PictureBox();
+            this.Pacman = new System.Windows.Forms.PictureBox();
+            this.gametimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Pellet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall46)).BeginInit();
@@ -263,6 +266,7 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pellet55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pacman)).BeginInit();
             this.SuspendLayout();
             // 
             // Pellet1
@@ -285,6 +289,7 @@ namespace Pacman
             this.wall50.Size = new System.Drawing.Size(54, 10);
             this.wall50.TabIndex = 54;
             this.wall50.TabStop = false;
+            this.wall50.Tag = "wall";
             // 
             // wall46
             // 
@@ -295,6 +300,7 @@ namespace Pacman
             this.wall46.Size = new System.Drawing.Size(49, 10);
             this.wall46.TabIndex = 53;
             this.wall46.TabStop = false;
+            this.wall46.Tag = "wall";
             // 
             // wall47
             // 
@@ -305,6 +311,7 @@ namespace Pacman
             this.wall47.Size = new System.Drawing.Size(14, 58);
             this.wall47.TabIndex = 51;
             this.wall47.TabStop = false;
+            this.wall47.Tag = "wall";
             // 
             // wall49
             // 
@@ -315,6 +322,7 @@ namespace Pacman
             this.wall49.Size = new System.Drawing.Size(14, 58);
             this.wall49.TabIndex = 50;
             this.wall49.TabStop = false;
+            this.wall49.Tag = "wall";
             // 
             // wall48
             // 
@@ -325,6 +333,7 @@ namespace Pacman
             this.wall48.Size = new System.Drawing.Size(133, 10);
             this.wall48.TabIndex = 49;
             this.wall48.TabStop = false;
+            this.wall48.Tag = "wall";
             // 
             // wall32
             // 
@@ -335,6 +344,7 @@ namespace Pacman
             this.wall32.Size = new System.Drawing.Size(14, 38);
             this.wall32.TabIndex = 48;
             this.wall32.TabStop = false;
+            this.wall32.Tag = "wall";
             // 
             // wall34
             // 
@@ -345,6 +355,7 @@ namespace Pacman
             this.wall34.Size = new System.Drawing.Size(14, 38);
             this.wall34.TabIndex = 47;
             this.wall34.TabStop = false;
+            this.wall34.Tag = "wall";
             // 
             // wall31
             // 
@@ -355,6 +366,7 @@ namespace Pacman
             this.wall31.Size = new System.Drawing.Size(52, 16);
             this.wall31.TabIndex = 46;
             this.wall31.TabStop = false;
+            this.wall31.Tag = "wall";
             // 
             // wall27
             // 
@@ -365,6 +377,7 @@ namespace Pacman
             this.wall27.Size = new System.Drawing.Size(52, 16);
             this.wall27.TabIndex = 45;
             this.wall27.TabStop = false;
+            this.wall27.Tag = "wall";
             // 
             // wall26
             // 
@@ -375,6 +388,7 @@ namespace Pacman
             this.wall26.Size = new System.Drawing.Size(14, 162);
             this.wall26.TabIndex = 44;
             this.wall26.TabStop = false;
+            this.wall26.Tag = "wall";
             // 
             // wall30
             // 
@@ -385,6 +399,7 @@ namespace Pacman
             this.wall30.Size = new System.Drawing.Size(14, 162);
             this.wall30.TabIndex = 43;
             this.wall30.TabStop = false;
+            this.wall30.Tag = "wall";
             // 
             // wall45
             // 
@@ -415,6 +430,7 @@ namespace Pacman
             this.wall37.Size = new System.Drawing.Size(52, 16);
             this.wall37.TabIndex = 40;
             this.wall37.TabStop = false;
+            this.wall37.Tag = "wall";
             // 
             // wall36
             // 
@@ -425,6 +441,7 @@ namespace Pacman
             this.wall36.Size = new System.Drawing.Size(52, 16);
             this.wall36.TabIndex = 39;
             this.wall36.TabStop = false;
+            this.wall36.Tag = "wall";
             // 
             // wall39
             // 
@@ -435,6 +452,7 @@ namespace Pacman
             this.wall39.Size = new System.Drawing.Size(14, 78);
             this.wall39.TabIndex = 38;
             this.wall39.TabStop = false;
+            this.wall39.Tag = "wall";
             // 
             // wall40
             // 
@@ -445,6 +463,7 @@ namespace Pacman
             this.wall40.Size = new System.Drawing.Size(166, 16);
             this.wall40.TabIndex = 37;
             this.wall40.TabStop = false;
+            this.wall40.Tag = "wall";
             // 
             // wall43
             // 
@@ -455,6 +474,7 @@ namespace Pacman
             this.wall43.Size = new System.Drawing.Size(14, 78);
             this.wall43.TabIndex = 36;
             this.wall43.TabStop = false;
+            this.wall43.Tag = "wall";
             // 
             // wall44
             // 
@@ -465,6 +485,7 @@ namespace Pacman
             this.wall44.Size = new System.Drawing.Size(166, 16);
             this.wall44.TabIndex = 35;
             this.wall44.TabStop = false;
+            this.wall44.Tag = "wall";
             // 
             // wall42
             // 
@@ -475,6 +496,7 @@ namespace Pacman
             this.wall42.Size = new System.Drawing.Size(14, 69);
             this.wall42.TabIndex = 34;
             this.wall42.TabStop = false;
+            this.wall42.Tag = "wall";
             // 
             // wall41
             // 
@@ -485,6 +507,7 @@ namespace Pacman
             this.wall41.Size = new System.Drawing.Size(117, 16);
             this.wall41.TabIndex = 33;
             this.wall41.TabStop = false;
+            this.wall41.Tag = "wall";
             // 
             // wall35
             // 
@@ -495,6 +518,7 @@ namespace Pacman
             this.wall35.Size = new System.Drawing.Size(14, 69);
             this.wall35.TabIndex = 32;
             this.wall35.TabStop = false;
+            this.wall35.Tag = "wall";
             // 
             // wall33
             // 
@@ -505,42 +529,51 @@ namespace Pacman
             this.wall33.Size = new System.Drawing.Size(117, 16);
             this.wall33.TabIndex = 31;
             this.wall33.TabStop = false;
+            this.wall33.Tag = "wall";
             // 
             // wall29
             // 
             this.wall29.BackColor = System.Drawing.Color.Blue;
+            this.wall29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall29.Location = new System.Drawing.Point(310, 192);
             this.wall29.Name = "wall29";
             this.wall29.Size = new System.Drawing.Size(14, 78);
             this.wall29.TabIndex = 30;
             this.wall29.TabStop = false;
+            this.wall29.Tag = "wall";
             // 
             // wall28
             // 
             this.wall28.BackColor = System.Drawing.Color.Blue;
+            this.wall28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall28.Location = new System.Drawing.Point(259, 183);
             this.wall28.Name = "wall28";
             this.wall28.Size = new System.Drawing.Size(117, 16);
             this.wall28.TabIndex = 29;
             this.wall28.TabStop = false;
+            this.wall28.Tag = "wall";
             // 
             // wall25
             // 
             this.wall25.BackColor = System.Drawing.Color.Blue;
+            this.wall25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall25.Location = new System.Drawing.Point(500, 183);
             this.wall25.Name = "wall25";
             this.wall25.Size = new System.Drawing.Size(52, 16);
             this.wall25.TabIndex = 28;
             this.wall25.TabStop = false;
+            this.wall25.Tag = "wall";
             // 
             // wall24
             // 
             this.wall24.BackColor = System.Drawing.Color.Blue;
+            this.wall24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall24.Location = new System.Drawing.Point(84, 183);
             this.wall24.Name = "wall24";
             this.wall24.Size = new System.Drawing.Size(52, 16);
             this.wall24.TabIndex = 27;
             this.wall24.TabStop = false;
+            this.wall24.Tag = "wall";
             // 
             // wall23
             // 
@@ -551,43 +584,52 @@ namespace Pacman
             this.wall23.Size = new System.Drawing.Size(14, 90);
             this.wall23.TabIndex = 26;
             this.wall23.TabStop = false;
+            this.wall23.Tag = "wall";
             // 
             // wall22
             // 
             this.wall22.BackColor = System.Drawing.Color.Blue;
+            this.wall22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall22.Location = new System.Drawing.Point(376, 77);
             this.wall22.Name = "wall22";
             this.wall22.Size = new System.Drawing.Size(76, 49);
             this.wall22.TabIndex = 25;
             this.wall22.TabStop = false;
+            this.wall22.Tag = "wall";
             this.wall22.Click += new System.EventHandler(this.wall22_Click);
             // 
             // wall21
             // 
             this.wall21.BackColor = System.Drawing.Color.Blue;
+            this.wall21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall21.Location = new System.Drawing.Point(181, 77);
             this.wall21.Name = "wall21";
             this.wall21.Size = new System.Drawing.Size(76, 49);
             this.wall21.TabIndex = 24;
             this.wall21.TabStop = false;
+            this.wall21.Tag = "wall";
             // 
             // wall20
             // 
             this.wall20.BackColor = System.Drawing.Color.Blue;
+            this.wall20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall20.Location = new System.Drawing.Point(500, 77);
             this.wall20.Name = "wall20";
             this.wall20.Size = new System.Drawing.Size(52, 49);
             this.wall20.TabIndex = 22;
             this.wall20.TabStop = false;
+            this.wall20.Tag = "wall";
             // 
             // wall19
             // 
             this.wall19.BackColor = System.Drawing.Color.Blue;
+            this.wall19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wall19.Location = new System.Drawing.Point(84, 77);
             this.wall19.Name = "wall19";
             this.wall19.Size = new System.Drawing.Size(52, 49);
             this.wall19.TabIndex = 21;
             this.wall19.TabStop = false;
+            this.wall19.Tag = "wall";
             // 
             // wall13
             // 
@@ -598,6 +640,7 @@ namespace Pacman
             this.wall13.Size = new System.Drawing.Size(14, 78);
             this.wall13.TabIndex = 20;
             this.wall13.TabStop = false;
+            this.wall13.Tag = "wall";
             // 
             // wall16
             // 
@@ -608,6 +651,7 @@ namespace Pacman
             this.wall16.Size = new System.Drawing.Size(14, 78);
             this.wall16.TabIndex = 19;
             this.wall16.TabStop = false;
+            this.wall16.Tag = "wall";
             // 
             // wall15
             // 
@@ -618,6 +662,7 @@ namespace Pacman
             this.wall15.Size = new System.Drawing.Size(98, 16);
             this.wall15.TabIndex = 18;
             this.wall15.TabStop = false;
+            this.wall15.Tag = "wall";
             // 
             // wall12
             // 
@@ -628,6 +673,7 @@ namespace Pacman
             this.wall12.Size = new System.Drawing.Size(98, 16);
             this.wall12.TabIndex = 17;
             this.wall12.TabStop = false;
+            this.wall12.Tag = "wall";
             // 
             // wall18
             // 
@@ -638,6 +684,7 @@ namespace Pacman
             this.wall18.Size = new System.Drawing.Size(89, 16);
             this.wall18.TabIndex = 16;
             this.wall18.TabStop = false;
+            this.wall18.Tag = "wall";
             // 
             // wall14
             // 
@@ -648,6 +695,7 @@ namespace Pacman
             this.wall14.Size = new System.Drawing.Size(89, 16);
             this.wall14.TabIndex = 15;
             this.wall14.TabStop = false;
+            this.wall14.Tag = "wall";
             // 
             // wall11
             // 
@@ -658,6 +706,7 @@ namespace Pacman
             this.wall11.Size = new System.Drawing.Size(89, 16);
             this.wall11.TabIndex = 14;
             this.wall11.TabStop = false;
+            this.wall11.Tag = "wall";
             // 
             // wall8
             // 
@@ -668,6 +717,7 @@ namespace Pacman
             this.wall8.Size = new System.Drawing.Size(89, 16);
             this.wall8.TabIndex = 13;
             this.wall8.TabStop = false;
+            this.wall8.Tag = "wall";
             // 
             // wall9
             // 
@@ -678,6 +728,7 @@ namespace Pacman
             this.wall9.Size = new System.Drawing.Size(89, 16);
             this.wall9.TabIndex = 12;
             this.wall9.TabStop = false;
+            this.wall9.Tag = "wall";
             // 
             // wall6
             // 
@@ -688,6 +739,7 @@ namespace Pacman
             this.wall6.Size = new System.Drawing.Size(89, 16);
             this.wall6.TabIndex = 11;
             this.wall6.TabStop = false;
+            this.wall6.Tag = "wall";
             // 
             // wall7
             // 
@@ -698,6 +750,7 @@ namespace Pacman
             this.wall7.Size = new System.Drawing.Size(14, 78);
             this.wall7.TabIndex = 10;
             this.wall7.TabStop = false;
+            this.wall7.Tag = "wall";
             // 
             // wall10
             // 
@@ -708,6 +761,7 @@ namespace Pacman
             this.wall10.Size = new System.Drawing.Size(14, 78);
             this.wall10.TabIndex = 9;
             this.wall10.TabStop = false;
+            this.wall10.Tag = "wall";
             // 
             // wall1
             // 
@@ -718,6 +772,7 @@ namespace Pacman
             this.wall1.Size = new System.Drawing.Size(14, 234);
             this.wall1.TabIndex = 8;
             this.wall1.TabStop = false;
+            this.wall1.Tag = "wall";
             // 
             // wall2
             // 
@@ -728,6 +783,7 @@ namespace Pacman
             this.wall2.Size = new System.Drawing.Size(14, 234);
             this.wall2.TabIndex = 7;
             this.wall2.TabStop = false;
+            this.wall2.Tag = "wall";
             // 
             // wall3
             // 
@@ -738,6 +794,7 @@ namespace Pacman
             this.wall3.Size = new System.Drawing.Size(14, 180);
             this.wall3.TabIndex = 6;
             this.wall3.TabStop = false;
+            this.wall3.Tag = "wall";
             // 
             // wall4
             // 
@@ -748,6 +805,7 @@ namespace Pacman
             this.wall4.Size = new System.Drawing.Size(14, 167);
             this.wall4.TabIndex = 5;
             this.wall4.TabStop = false;
+            this.wall4.Tag = "wall";
             // 
             // wall5
             // 
@@ -758,6 +816,7 @@ namespace Pacman
             this.wall5.Size = new System.Drawing.Size(551, 15);
             this.wall5.TabIndex = 1;
             this.wall5.TabStop = false;
+            this.wall5.Tag = "wall";
             // 
             // wall0
             // 
@@ -768,6 +827,7 @@ namespace Pacman
             this.wall0.Size = new System.Drawing.Size(560, 15);
             this.wall0.TabIndex = 0;
             this.wall0.TabStop = false;
+            this.wall0.Tag = "wall";
             // 
             // Pellet2
             // 
@@ -890,45 +950,45 @@ namespace Pacman
             this.Pellet13.TabIndex = 66;
             this.Pellet13.TabStop = false;
             // 
-            // pictureBox1
+            // Pellet14
             // 
             this.Pellet14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pellet14.Location = new System.Drawing.Point(568, 495);
-            this.Pellet14.Name = "Pellet10";
+            this.Pellet14.Name = "Pellet14";
             this.Pellet14.Size = new System.Drawing.Size(10, 10);
             this.Pellet14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet14.TabIndex = 78;
             this.Pellet14.TabStop = false;
             // 
-            // pictureBox2
+            // Pellet15
             // 
             this.Pellet15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pellet15.Location = new System.Drawing.Point(529, 495);
-            this.Pellet15.Name = "pictureBox2";
+            this.Pellet15.Name = "Pellet15";
             this.Pellet15.Size = new System.Drawing.Size(10, 10);
             this.Pellet15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet15.TabIndex = 77;
             this.Pellet15.TabStop = false;
             // 
-            // pictureBox3
+            // Pellet16
             // 
             this.Pellet16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pellet16.Location = new System.Drawing.Point(483, 495);
-            this.Pellet16.Name = "pictureBox3";
+            this.Pellet16.Name = "Pellet16";
             this.Pellet16.Size = new System.Drawing.Size(10, 10);
             this.Pellet16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet16.TabIndex = 76;
             this.Pellet16.TabStop = false;
             // 
-            // pictureBox4
+            // Pellet17
             // 
             this.Pellet17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pellet17.Location = new System.Drawing.Point(407, 495);
-            this.Pellet17.Name = "pictureBox4";
+            this.Pellet17.Name = "Pellet17";
             this.Pellet17.Size = new System.Drawing.Size(10, 10);
             this.Pellet17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet17.TabIndex = 75;
@@ -944,6 +1004,7 @@ namespace Pacman
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 74;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "";
             // 
             // pictureBox6
             // 
@@ -1485,16 +1546,29 @@ namespace Pacman
             this.pictureBox54.TabIndex = 123;
             this.pictureBox54.TabStop = false;
             // 
-            // pictureBox55
+            // Pellet55
             // 
             this.Pellet55.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pellet55.Location = new System.Drawing.Point(350, 217);
-            this.Pellet55.Name = "pictureBox55";
+            this.Pellet55.Name = "Pellet55";
             this.Pellet55.Size = new System.Drawing.Size(10, 10);
             this.Pellet55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet55.TabIndex = 122;
             this.Pellet55.TabStop = false;
+            // 
+            // Pacman
+            // 
+            this.Pacman.BackColor = System.Drawing.Color.Yellow;
+            this.Pacman.Location = new System.Drawing.Point(140, 355);
+            this.Pacman.Name = "Pacman";
+            this.Pacman.Size = new System.Drawing.Size(25, 25);
+            this.Pacman.TabIndex = 124;
+            this.Pacman.TabStop = false;
+            // 
+            // gametimer
+            // 
+            this.gametimer.Tick += new System.EventHandler(this.gametimer_Tick);
             // 
             // GameScreen
             // 
@@ -1502,6 +1576,7 @@ namespace Pacman
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(634, 711);
+            this.Controls.Add(this.Pacman);
             this.Controls.Add(this.pictureBox54);
             this.Controls.Add(this.Pellet55);
             this.Controls.Add(this.pictureBox7);
@@ -1623,6 +1698,8 @@ namespace Pacman
             this.Name = "GameScreen";
             this.Text = "PacMan";
             this.Load += new System.EventHandler(this.GameScreen_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             ((System.ComponentModel.ISupportInitialize)(this.Pellet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall46)).EndInit();
@@ -1740,6 +1817,7 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pellet55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pacman)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1863,5 +1941,7 @@ namespace Pacman
         private System.Windows.Forms.PictureBox pictureBox45;
         private System.Windows.Forms.PictureBox pictureBox54;
         private System.Windows.Forms.PictureBox Pellet55;
+        private System.Windows.Forms.PictureBox Pacman;
+        private System.Windows.Forms.Timer gametimer;
     }
 }

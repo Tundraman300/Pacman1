@@ -113,5 +113,20 @@
   <ItemGroup>
     <None Include="Resources\download.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redGhost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedGhost2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CyanGhost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrangeGhost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redGhost3.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

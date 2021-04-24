@@ -63,6 +63,16 @@ namespace Pacman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CyanGhost {
+            get {
+                object obj = ResourceManager.GetObject("CyanGhost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -86,6 +96,16 @@ namespace Pacman.Properties {
         internal static System.Drawing.Bitmap Main_Menu {
             get {
                 object obj = ResourceManager.GetObject("Main_Menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OrangeGhost {
+            get {
+                object obj = ResourceManager.GetObject("OrangeGhost", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +156,36 @@ namespace Pacman.Properties {
         internal static System.Drawing.Bitmap Pellet4 {
             get {
                 object obj = ResourceManager.GetObject("Pellet4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redGhost {
+            get {
+                object obj = ResourceManager.GetObject("redGhost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RedGhost2 {
+            get {
+                object obj = ResourceManager.GetObject("RedGhost2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redGhost3 {
+            get {
+                object obj = ResourceManager.GetObject("redGhost3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

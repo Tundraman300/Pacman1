@@ -128,5 +128,8 @@
   <ItemGroup>
     <None Include="Resources\redGhost3.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\superPellet.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

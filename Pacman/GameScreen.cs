@@ -16,14 +16,20 @@ namespace Pacman
         bool godown;
         bool goleft;
         bool goright;
+        bool theGameIsOver;
 
-        int speed = 5;
+        int speed;
+
+        int redGhostSpeed = 8;
+        int orangeGhostSpeed = 8;
+        int cyanGhostSpeed = 8;
 
         int score = 0;
 
         public GameScreen()
         {
             InitializeComponent();
+            resetGame();
         }
 
 
@@ -87,14 +93,35 @@ namespace Pacman
                     {
                         if (pacman.Bounds.IntersectsWith(x.Bounds))
                         {
-                            score += 1;
+                            score = score + 10;
                             x.Visible = false;
 
                         }
                     }
+                    if ((string)x.Tag == "superPellet" && x.Visible == true)
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            score = score + 50;
+                            x.Visible = false;
+
+                        }
+                    }
+
+                    if ((string)x.Tag == "ghost")
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+
+                            gameOver();
+                        }
+                    }
                 }
             }
-
+            if (score == 1080)
+            {
+                youWin();
+            }
 
         }
 
@@ -141,9 +168,54 @@ namespace Pacman
             }
         }
 
-        private void gameOver(string message)
+        private void resetGame()
         {
+            ScoreCounter.Text = "0" + score;
+
+            score = 0;
+
+            speed = 5;
+
+            theGameIsOver = false;
+
+
+            pacman.Left = 107;
+            pacman.Top = 408;
+
+            redGhost.Left = 261;
+            redGhost.Top = 375;
+
+            cyanGhost.Left = 298;
+            cyanGhost.Top = 375;
+
+            orangeGhost.Left = 334;
+            orangeGhost.Top = 375;
+
+            foreach(Control x in this.Controls)
+            {
+                if(x is PictureBox)
+                {
+                    x.Visible = true;
+                }
+            }
+
+            gametimer.Start();
+
+        }
+
+        private void gameOver()
+        {
+            theGameIsOver = true;
             gametimer.Stop();
+            MessageBox.Show("The Ghosts got you, You Lose!", "Game Over");
+        }
+
+        private void youWin()
+        {
+            theGameIsOver = true;
+            gametimer.Stop();
+            MessageBox.Show("Congratulations! You have collected all the pellets.", "You Win!");
+           
         }
     }
 }

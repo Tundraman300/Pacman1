@@ -36,8 +36,8 @@ namespace Pacman
             this.ScoreText = new System.Windows.Forms.Label();
             this.LivesCounter = new System.Windows.Forms.Label();
             this.ScoreCounter = new System.Windows.Forms.Label();
-            this.pictureBox77 = new System.Windows.Forms.PictureBox();
-            this.pictureBox73 = new System.Windows.Forms.PictureBox();
+            this.orangeGhost = new System.Windows.Forms.PictureBox();
+            this.cyanGhost = new System.Windows.Forms.PictureBox();
             this.pictureBox76 = new System.Windows.Forms.PictureBox();
             this.pictureBox75 = new System.Windows.Forms.PictureBox();
             this.pictureBox74 = new System.Windows.Forms.PictureBox();
@@ -48,7 +48,7 @@ namespace Pacman
             this.pictureBox69 = new System.Windows.Forms.PictureBox();
             this.pictureBox66 = new System.Windows.Forms.PictureBox();
             this.pictureBox67 = new System.Windows.Forms.PictureBox();
-            this.pictureBox65 = new System.Windows.Forms.PictureBox();
+            this.redGhost = new System.Windows.Forms.PictureBox();
             this.pictureBox64 = new System.Windows.Forms.PictureBox();
             this.pictureBox63 = new System.Windows.Forms.PictureBox();
             this.pictureBox62 = new System.Windows.Forms.PictureBox();
@@ -85,7 +85,6 @@ namespace Pacman
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
@@ -95,8 +94,6 @@ namespace Pacman
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
@@ -181,8 +178,12 @@ namespace Pacman
             this.wall4 = new System.Windows.Forms.PictureBox();
             this.wall5 = new System.Windows.Forms.PictureBox();
             this.wall0 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
+            this.pictureBox65 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.orangeGhost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cyanGhost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
@@ -193,7 +194,7 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redGhost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
@@ -230,7 +231,6 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -240,8 +240,6 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
@@ -326,6 +324,10 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.wall4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             this.SuspendLayout();
             // 
             // gametimer
@@ -380,25 +382,27 @@ namespace Pacman
             this.ScoreCounter.TabIndex = 128;
             this.ScoreCounter.Text = "0";
             // 
-            // pictureBox77
+            // orangeGhost
             // 
-            this.pictureBox77.Image = global::Pacman.Properties.Resources.OrangeGhost;
-            this.pictureBox77.Location = new System.Drawing.Point(334, 375);
-            this.pictureBox77.Name = "pictureBox77";
-            this.pictureBox77.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox77.TabIndex = 157;
-            this.pictureBox77.TabStop = false;
+            this.orangeGhost.Image = global::Pacman.Properties.Resources.OrangeGhost;
+            this.orangeGhost.Location = new System.Drawing.Point(334, 375);
+            this.orangeGhost.Name = "orangeGhost";
+            this.orangeGhost.Size = new System.Drawing.Size(24, 26);
+            this.orangeGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.orangeGhost.TabIndex = 157;
+            this.orangeGhost.TabStop = false;
+            this.orangeGhost.Tag = "ghost";
             // 
-            // pictureBox73
+            // cyanGhost
             // 
-            this.pictureBox73.Image = global::Pacman.Properties.Resources.CyanGhost;
-            this.pictureBox73.Location = new System.Drawing.Point(298, 375);
-            this.pictureBox73.Name = "pictureBox73";
-            this.pictureBox73.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox73.TabIndex = 156;
-            this.pictureBox73.TabStop = false;
+            this.cyanGhost.Image = global::Pacman.Properties.Resources.CyanGhost;
+            this.cyanGhost.Location = new System.Drawing.Point(298, 375);
+            this.cyanGhost.Name = "cyanGhost";
+            this.cyanGhost.Size = new System.Drawing.Size(24, 26);
+            this.cyanGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cyanGhost.TabIndex = 156;
+            this.cyanGhost.TabStop = false;
+            this.cyanGhost.Tag = "ghost";
             // 
             // pictureBox76
             // 
@@ -464,7 +468,7 @@ namespace Pacman
             // 
             this.pictureBox70.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox70.Image = global::Pacman.Properties.Resources.Pellet;
-            this.pictureBox70.Location = new System.Drawing.Point(60, 150);
+            this.pictureBox70.Location = new System.Drawing.Point(60, 200);
             this.pictureBox70.Name = "pictureBox70";
             this.pictureBox70.Size = new System.Drawing.Size(10, 10);
             this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -520,15 +524,16 @@ namespace Pacman
             this.pictureBox67.TabStop = false;
             this.pictureBox67.Tag = "pellet";
             // 
-            // pictureBox65
+            // redGhost
             // 
-            this.pictureBox65.Image = global::Pacman.Properties.Resources.redGhost3;
-            this.pictureBox65.Location = new System.Drawing.Point(261, 375);
-            this.pictureBox65.Name = "pictureBox65";
-            this.pictureBox65.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox65.TabIndex = 144;
-            this.pictureBox65.TabStop = false;
+            this.redGhost.Image = global::Pacman.Properties.Resources.redGhost3;
+            this.redGhost.Location = new System.Drawing.Point(261, 375);
+            this.redGhost.Name = "redGhost";
+            this.redGhost.Size = new System.Drawing.Size(24, 26);
+            this.redGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.redGhost.TabIndex = 144;
+            this.redGhost.TabStop = false;
+            this.redGhost.Tag = "ghost";
             // 
             // pictureBox64
             // 
@@ -713,7 +718,7 @@ namespace Pacman
             // pacman
             // 
             this.pacman.BackColor = System.Drawing.Color.Yellow;
-            this.pacman.Location = new System.Drawing.Point(111, 408);
+            this.pacman.Location = new System.Drawing.Point(107, 408);
             this.pacman.Name = "pacman";
             this.pacman.Size = new System.Drawing.Size(25, 25);
             this.pacman.TabIndex = 124;
@@ -960,18 +965,6 @@ namespace Pacman
             this.pictureBox39.TabStop = false;
             this.pictureBox39.Tag = "pellet";
             // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
-            this.pictureBox25.Location = new System.Drawing.Point(566, 661);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 102;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Tag = "pellet";
-            // 
             // pictureBox26
             // 
             this.pictureBox26.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1079,30 +1072,6 @@ namespace Pacman
             this.pictureBox35.TabIndex = 92;
             this.pictureBox35.TabStop = false;
             this.pictureBox35.Tag = "pellet";
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox36.Image")));
-            this.pictureBox36.Location = new System.Drawing.Point(63, 661);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox36.TabIndex = 91;
-            this.pictureBox36.TabStop = false;
-            this.pictureBox36.Tag = "pellet";
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(565, 108);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 90;
-            this.pictureBox19.TabStop = false;
-            this.pictureBox19.Tag = "pellet";
             // 
             // pictureBox20
             // 
@@ -1228,7 +1197,7 @@ namespace Pacman
             // 
             this.pictureBox18.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(56, 108);
+            this.pictureBox18.Location = new System.Drawing.Point(60, 150);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(10, 10);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1505,7 +1474,7 @@ namespace Pacman
             // 
             this.Pellet1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Pellet1.Image = ((System.Drawing.Image)(resources.GetObject("Pellet1.Image")));
-            this.Pellet1.Location = new System.Drawing.Point(56, 200);
+            this.Pellet1.Location = new System.Drawing.Point(60, 235);
             this.Pellet1.Name = "Pellet1";
             this.Pellet1.Size = new System.Drawing.Size(10, 10);
             this.Pellet1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2062,14 +2031,62 @@ namespace Pacman
             this.wall0.TabStop = false;
             this.wall0.Tag = "wall";
             // 
+            // pictureBox65
+            // 
+            this.pictureBox65.Image = global::Pacman.Properties.Resources.superPellet;
+            this.pictureBox65.Location = new System.Drawing.Point(56, 101);
+            this.pictureBox65.Name = "pictureBox65";
+            this.pictureBox65.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox65.TabIndex = 158;
+            this.pictureBox65.TabStop = false;
+            this.pictureBox65.Tag = "superPellet";
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::Pacman.Properties.Resources.superPellet;
+            this.pictureBox19.Location = new System.Drawing.Point(558, 101);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 159;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.Tag = "superPellet";
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::Pacman.Properties.Resources.superPellet;
+            this.pictureBox25.Location = new System.Drawing.Point(559, 654);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox25.TabIndex = 160;
+            this.pictureBox25.TabStop = false;
+            this.pictureBox25.Tag = "superPellet";
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.Image = global::Pacman.Properties.Resources.superPellet;
+            this.pictureBox36.Location = new System.Drawing.Point(60, 654);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox36.TabIndex = 161;
+            this.pictureBox36.TabStop = false;
+            this.pictureBox36.Tag = "superPellet";
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(634, 711);
-            this.Controls.Add(this.pictureBox77);
-            this.Controls.Add(this.pictureBox73);
+            this.Controls.Add(this.pictureBox36);
+            this.Controls.Add(this.pictureBox25);
+            this.Controls.Add(this.pictureBox19);
+            this.Controls.Add(this.pictureBox65);
+            this.Controls.Add(this.orangeGhost);
+            this.Controls.Add(this.cyanGhost);
             this.Controls.Add(this.pictureBox76);
             this.Controls.Add(this.pictureBox75);
             this.Controls.Add(this.pictureBox74);
@@ -2080,7 +2097,7 @@ namespace Pacman
             this.Controls.Add(this.pictureBox69);
             this.Controls.Add(this.pictureBox66);
             this.Controls.Add(this.pictureBox67);
-            this.Controls.Add(this.pictureBox65);
+            this.Controls.Add(this.redGhost);
             this.Controls.Add(this.pictureBox64);
             this.Controls.Add(this.pictureBox63);
             this.Controls.Add(this.pictureBox62);
@@ -2121,7 +2138,6 @@ namespace Pacman
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.pictureBox38);
             this.Controls.Add(this.pictureBox39);
-            this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.pictureBox26);
             this.Controls.Add(this.pictureBox27);
             this.Controls.Add(this.pictureBox28);
@@ -2131,8 +2147,6 @@ namespace Pacman
             this.Controls.Add(this.pictureBox33);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.pictureBox35);
-            this.Controls.Add(this.pictureBox36);
-            this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox22);
@@ -2222,8 +2236,8 @@ namespace Pacman
             this.Text = "PacMan";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orangeGhost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cyanGhost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
@@ -2234,7 +2248,7 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redGhost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
@@ -2271,7 +2285,6 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -2281,8 +2294,6 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
@@ -2367,6 +2378,10 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.wall4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2453,13 +2468,11 @@ namespace Pacman
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox28;
@@ -2469,7 +2482,6 @@ namespace Pacman
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.PictureBox pictureBox35;
-        private System.Windows.Forms.PictureBox pictureBox36;
         private System.Windows.Forms.PictureBox pictureBox37;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox39;
@@ -2511,7 +2523,7 @@ namespace Pacman
         private System.Windows.Forms.PictureBox pictureBox62;
         private System.Windows.Forms.PictureBox pictureBox63;
         private System.Windows.Forms.PictureBox pictureBox64;
-        private System.Windows.Forms.PictureBox pictureBox65;
+        private System.Windows.Forms.PictureBox redGhost;
         private System.Windows.Forms.PictureBox pictureBox66;
         private System.Windows.Forms.PictureBox pictureBox67;
         private System.Windows.Forms.PictureBox pictureBox68;
@@ -2522,7 +2534,11 @@ namespace Pacman
         private System.Windows.Forms.PictureBox pictureBox74;
         private System.Windows.Forms.PictureBox pictureBox75;
         private System.Windows.Forms.PictureBox pictureBox76;
-        private System.Windows.Forms.PictureBox pictureBox73;
-        private System.Windows.Forms.PictureBox pictureBox77;
+        private System.Windows.Forms.PictureBox cyanGhost;
+        private System.Windows.Forms.PictureBox orangeGhost;
+        private System.Windows.Forms.PictureBox pictureBox65;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox pictureBox36;
     }
 }

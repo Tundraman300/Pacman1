@@ -147,7 +147,7 @@ namespace Pacman
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
             this.Pellet55 = new System.Windows.Forms.PictureBox();
-            this.Pacman = new System.Windows.Forms.PictureBox();
+            this.pacman = new System.Windows.Forms.PictureBox();
             this.gametimer = new System.Windows.Forms.Timer(this.components);
             this.LivesText = new System.Windows.Forms.Label();
             this.ScoreText = new System.Windows.Forms.Label();
@@ -270,17 +270,16 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pellet55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pacman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacman)).BeginInit();
             this.SuspendLayout();
             // 
             // Pellet1
             // 
             this.Pellet1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet1.Location = new System.Drawing.Point(74, 246);
-            this.Pellet1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet1.Location = new System.Drawing.Point(56, 200);
             this.Pellet1.Name = "Pellet1";
-            this.Pellet1.Size = new System.Drawing.Size(13, 12);
+            this.Pellet1.Size = new System.Drawing.Size(10, 10);
             this.Pellet1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet1.TabIndex = 55;
             this.Pellet1.TabStop = false;
@@ -289,10 +288,9 @@ namespace Pacman
             // 
             this.wall50.BackColor = System.Drawing.Color.Blue;
             this.wall50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall50.Location = new System.Drawing.Point(445, 442);
-            this.wall50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall50.Location = new System.Drawing.Point(334, 359);
             this.wall50.Name = "wall50";
-            this.wall50.Size = new System.Drawing.Size(71, 12);
+            this.wall50.Size = new System.Drawing.Size(54, 10);
             this.wall50.TabIndex = 54;
             this.wall50.TabStop = false;
             this.wall50.Tag = "wall";
@@ -301,10 +299,9 @@ namespace Pacman
             // 
             this.wall46.BackColor = System.Drawing.Color.Blue;
             this.wall46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall46.Location = new System.Drawing.Point(321, 442);
-            this.wall46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall46.Location = new System.Drawing.Point(241, 359);
             this.wall46.Name = "wall46";
-            this.wall46.Size = new System.Drawing.Size(65, 12);
+            this.wall46.Size = new System.Drawing.Size(49, 10);
             this.wall46.TabIndex = 53;
             this.wall46.TabStop = false;
             this.wall46.Tag = "wall";
@@ -313,10 +310,9 @@ namespace Pacman
             // 
             this.wall47.BackColor = System.Drawing.Color.Blue;
             this.wall47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall47.Location = new System.Drawing.Point(321, 442);
-            this.wall47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall47.Location = new System.Drawing.Point(241, 359);
             this.wall47.Name = "wall47";
-            this.wall47.Size = new System.Drawing.Size(18, 71);
+            this.wall47.Size = new System.Drawing.Size(14, 58);
             this.wall47.TabIndex = 51;
             this.wall47.TabStop = false;
             this.wall47.Tag = "wall";
@@ -325,10 +321,9 @@ namespace Pacman
             // 
             this.wall49.BackColor = System.Drawing.Color.Blue;
             this.wall49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall49.Location = new System.Drawing.Point(498, 442);
-            this.wall49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall49.Location = new System.Drawing.Point(374, 359);
             this.wall49.Name = "wall49";
-            this.wall49.Size = new System.Drawing.Size(18, 71);
+            this.wall49.Size = new System.Drawing.Size(14, 58);
             this.wall49.TabIndex = 50;
             this.wall49.TabStop = false;
             this.wall49.Tag = "wall";
@@ -337,10 +332,9 @@ namespace Pacman
             // 
             this.wall48.BackColor = System.Drawing.Color.Blue;
             this.wall48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall48.Location = new System.Drawing.Point(321, 501);
-            this.wall48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall48.Location = new System.Drawing.Point(241, 407);
             this.wall48.Name = "wall48";
-            this.wall48.Size = new System.Drawing.Size(177, 12);
+            this.wall48.Size = new System.Drawing.Size(133, 10);
             this.wall48.TabIndex = 49;
             this.wall48.TabStop = false;
             this.wall48.Tag = "wall";
@@ -349,10 +343,9 @@ namespace Pacman
             // 
             this.wall32.BackColor = System.Drawing.Color.Blue;
             this.wall32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall32.Location = new System.Drawing.Point(258, 540);
-            this.wall32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall32.Location = new System.Drawing.Point(194, 439);
             this.wall32.Name = "wall32";
-            this.wall32.Size = new System.Drawing.Size(18, 46);
+            this.wall32.Size = new System.Drawing.Size(14, 38);
             this.wall32.TabIndex = 48;
             this.wall32.TabStop = false;
             this.wall32.Tag = "wall";
@@ -361,10 +354,9 @@ namespace Pacman
             // 
             this.wall34.BackColor = System.Drawing.Color.Blue;
             this.wall34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall34.Location = new System.Drawing.Point(564, 540);
-            this.wall34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall34.Location = new System.Drawing.Point(423, 439);
             this.wall34.Name = "wall34";
-            this.wall34.Size = new System.Drawing.Size(18, 46);
+            this.wall34.Size = new System.Drawing.Size(14, 38);
             this.wall34.TabIndex = 47;
             this.wall34.TabStop = false;
             this.wall34.Tag = "wall";
@@ -373,10 +365,9 @@ namespace Pacman
             // 
             this.wall31.BackColor = System.Drawing.Color.Blue;
             this.wall31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall31.Location = new System.Drawing.Point(498, 358);
-            this.wall31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall31.Location = new System.Drawing.Point(374, 291);
             this.wall31.Name = "wall31";
-            this.wall31.Size = new System.Drawing.Size(69, 19);
+            this.wall31.Size = new System.Drawing.Size(52, 16);
             this.wall31.TabIndex = 46;
             this.wall31.TabStop = false;
             this.wall31.Tag = "wall";
@@ -385,10 +376,9 @@ namespace Pacman
             // 
             this.wall27.BackColor = System.Drawing.Color.Blue;
             this.wall27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall27.Location = new System.Drawing.Point(270, 358);
-            this.wall27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall27.Location = new System.Drawing.Point(202, 291);
             this.wall27.Name = "wall27";
-            this.wall27.Size = new System.Drawing.Size(69, 19);
+            this.wall27.Size = new System.Drawing.Size(52, 16);
             this.wall27.TabIndex = 45;
             this.wall27.TabStop = false;
             this.wall27.Tag = "wall";
@@ -397,10 +387,9 @@ namespace Pacman
             // 
             this.wall26.BackColor = System.Drawing.Color.Blue;
             this.wall26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall26.Location = new System.Drawing.Point(258, 289);
-            this.wall26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall26.Location = new System.Drawing.Point(194, 235);
             this.wall26.Name = "wall26";
-            this.wall26.Size = new System.Drawing.Size(18, 199);
+            this.wall26.Size = new System.Drawing.Size(14, 162);
             this.wall26.TabIndex = 44;
             this.wall26.TabStop = false;
             this.wall26.Tag = "wall";
@@ -409,10 +398,9 @@ namespace Pacman
             // 
             this.wall30.BackColor = System.Drawing.Color.Blue;
             this.wall30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall30.Location = new System.Drawing.Point(564, 289);
-            this.wall30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall30.Location = new System.Drawing.Point(423, 235);
             this.wall30.Name = "wall30";
-            this.wall30.Size = new System.Drawing.Size(18, 199);
+            this.wall30.Size = new System.Drawing.Size(14, 162);
             this.wall30.TabIndex = 43;
             this.wall30.TabStop = false;
             this.wall30.Tag = "wall";
@@ -421,10 +409,9 @@ namespace Pacman
             // 
             this.wall45.BackColor = System.Drawing.Color.Blue;
             this.wall45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall45.Location = new System.Drawing.Point(664, 697);
-            this.wall45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall45.Location = new System.Drawing.Point(498, 566);
             this.wall45.Name = "wall45";
-            this.wall45.Size = new System.Drawing.Size(69, 19);
+            this.wall45.Size = new System.Drawing.Size(52, 16);
             this.wall45.TabIndex = 42;
             this.wall45.TabStop = false;
             // 
@@ -432,10 +419,9 @@ namespace Pacman
             // 
             this.wall38.BackColor = System.Drawing.Color.Blue;
             this.wall38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall38.Location = new System.Drawing.Point(109, 697);
-            this.wall38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall38.Location = new System.Drawing.Point(82, 566);
             this.wall38.Name = "wall38";
-            this.wall38.Size = new System.Drawing.Size(69, 19);
+            this.wall38.Size = new System.Drawing.Size(52, 16);
             this.wall38.TabIndex = 41;
             this.wall38.TabStop = false;
             // 
@@ -443,10 +429,9 @@ namespace Pacman
             // 
             this.wall37.BackColor = System.Drawing.Color.Blue;
             this.wall37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall37.Location = new System.Drawing.Point(513, 630);
-            this.wall37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall37.Location = new System.Drawing.Point(385, 512);
             this.wall37.Name = "wall37";
-            this.wall37.Size = new System.Drawing.Size(69, 19);
+            this.wall37.Size = new System.Drawing.Size(52, 16);
             this.wall37.TabIndex = 40;
             this.wall37.TabStop = false;
             this.wall37.Tag = "wall";
@@ -455,10 +440,9 @@ namespace Pacman
             // 
             this.wall36.BackColor = System.Drawing.Color.Blue;
             this.wall36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall36.Location = new System.Drawing.Point(261, 630);
-            this.wall36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall36.Location = new System.Drawing.Point(196, 512);
             this.wall36.Name = "wall36";
-            this.wall36.Size = new System.Drawing.Size(69, 19);
+            this.wall36.Size = new System.Drawing.Size(52, 16);
             this.wall36.TabIndex = 39;
             this.wall36.TabStop = false;
             this.wall36.Tag = "wall";
@@ -467,10 +451,9 @@ namespace Pacman
             // 
             this.wall39.BackColor = System.Drawing.Color.Blue;
             this.wall39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall39.Location = new System.Drawing.Point(238, 697);
-            this.wall39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall39.Location = new System.Drawing.Point(178, 566);
             this.wall39.Name = "wall39";
-            this.wall39.Size = new System.Drawing.Size(18, 96);
+            this.wall39.Size = new System.Drawing.Size(14, 78);
             this.wall39.TabIndex = 38;
             this.wall39.TabStop = false;
             this.wall39.Tag = "wall";
@@ -479,10 +462,9 @@ namespace Pacman
             // 
             this.wall40.BackColor = System.Drawing.Color.Blue;
             this.wall40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall40.Location = new System.Drawing.Point(109, 773);
-            this.wall40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall40.Location = new System.Drawing.Point(82, 628);
             this.wall40.Name = "wall40";
-            this.wall40.Size = new System.Drawing.Size(221, 19);
+            this.wall40.Size = new System.Drawing.Size(166, 16);
             this.wall40.TabIndex = 37;
             this.wall40.TabStop = false;
             this.wall40.Tag = "wall";
@@ -491,10 +473,9 @@ namespace Pacman
             // 
             this.wall43.BackColor = System.Drawing.Color.Blue;
             this.wall43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall43.Location = new System.Drawing.Point(581, 697);
-            this.wall43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall43.Location = new System.Drawing.Point(436, 566);
             this.wall43.Name = "wall43";
-            this.wall43.Size = new System.Drawing.Size(18, 96);
+            this.wall43.Size = new System.Drawing.Size(14, 78);
             this.wall43.TabIndex = 36;
             this.wall43.TabStop = false;
             this.wall43.Tag = "wall";
@@ -503,10 +484,9 @@ namespace Pacman
             // 
             this.wall44.BackColor = System.Drawing.Color.Blue;
             this.wall44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall44.Location = new System.Drawing.Point(512, 773);
-            this.wall44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall44.Location = new System.Drawing.Point(384, 628);
             this.wall44.Name = "wall44";
-            this.wall44.Size = new System.Drawing.Size(221, 19);
+            this.wall44.Size = new System.Drawing.Size(166, 16);
             this.wall44.TabIndex = 35;
             this.wall44.TabStop = false;
             this.wall44.Tag = "wall";
@@ -515,10 +495,9 @@ namespace Pacman
             // 
             this.wall42.BackColor = System.Drawing.Color.Blue;
             this.wall42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall42.Location = new System.Drawing.Point(410, 708);
-            this.wall42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall42.Location = new System.Drawing.Point(308, 575);
             this.wall42.Name = "wall42";
-            this.wall42.Size = new System.Drawing.Size(18, 84);
+            this.wall42.Size = new System.Drawing.Size(14, 69);
             this.wall42.TabIndex = 34;
             this.wall42.TabStop = false;
             this.wall42.Tag = "wall";
@@ -527,10 +506,9 @@ namespace Pacman
             // 
             this.wall41.BackColor = System.Drawing.Color.Blue;
             this.wall41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall41.Location = new System.Drawing.Point(342, 697);
-            this.wall41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall41.Location = new System.Drawing.Point(256, 566);
             this.wall41.Name = "wall41";
-            this.wall41.Size = new System.Drawing.Size(155, 19);
+            this.wall41.Size = new System.Drawing.Size(117, 16);
             this.wall41.TabIndex = 33;
             this.wall41.TabStop = false;
             this.wall41.Tag = "wall";
@@ -539,10 +517,9 @@ namespace Pacman
             // 
             this.wall35.BackColor = System.Drawing.Color.Blue;
             this.wall35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall35.Location = new System.Drawing.Point(410, 565);
-            this.wall35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall35.Location = new System.Drawing.Point(308, 459);
             this.wall35.Name = "wall35";
-            this.wall35.Size = new System.Drawing.Size(18, 84);
+            this.wall35.Size = new System.Drawing.Size(14, 69);
             this.wall35.TabIndex = 32;
             this.wall35.TabStop = false;
             this.wall35.Tag = "wall";
@@ -551,10 +528,9 @@ namespace Pacman
             // 
             this.wall33.BackColor = System.Drawing.Color.Blue;
             this.wall33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall33.Location = new System.Drawing.Point(342, 554);
-            this.wall33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall33.Location = new System.Drawing.Point(256, 450);
             this.wall33.Name = "wall33";
-            this.wall33.Size = new System.Drawing.Size(155, 19);
+            this.wall33.Size = new System.Drawing.Size(117, 16);
             this.wall33.TabIndex = 31;
             this.wall33.TabStop = false;
             this.wall33.Tag = "wall";
@@ -563,10 +539,9 @@ namespace Pacman
             // 
             this.wall29.BackColor = System.Drawing.Color.Blue;
             this.wall29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall29.Location = new System.Drawing.Point(410, 300);
-            this.wall29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall29.Location = new System.Drawing.Point(308, 244);
             this.wall29.Name = "wall29";
-            this.wall29.Size = new System.Drawing.Size(18, 96);
+            this.wall29.Size = new System.Drawing.Size(14, 78);
             this.wall29.TabIndex = 30;
             this.wall29.TabStop = false;
             this.wall29.Tag = "wall";
@@ -575,10 +550,9 @@ namespace Pacman
             // 
             this.wall28.BackColor = System.Drawing.Color.Blue;
             this.wall28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall28.Location = new System.Drawing.Point(342, 289);
-            this.wall28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall28.Location = new System.Drawing.Point(256, 235);
             this.wall28.Name = "wall28";
-            this.wall28.Size = new System.Drawing.Size(155, 19);
+            this.wall28.Size = new System.Drawing.Size(117, 16);
             this.wall28.TabIndex = 29;
             this.wall28.TabStop = false;
             this.wall28.Tag = "wall";
@@ -587,10 +561,9 @@ namespace Pacman
             // 
             this.wall25.BackColor = System.Drawing.Color.Blue;
             this.wall25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall25.Location = new System.Drawing.Point(664, 289);
-            this.wall25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall25.Location = new System.Drawing.Point(498, 235);
             this.wall25.Name = "wall25";
-            this.wall25.Size = new System.Drawing.Size(69, 19);
+            this.wall25.Size = new System.Drawing.Size(52, 16);
             this.wall25.TabIndex = 28;
             this.wall25.TabStop = false;
             this.wall25.Tag = "wall";
@@ -599,10 +572,9 @@ namespace Pacman
             // 
             this.wall24.BackColor = System.Drawing.Color.Blue;
             this.wall24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall24.Location = new System.Drawing.Point(109, 289);
-            this.wall24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall24.Location = new System.Drawing.Point(82, 235);
             this.wall24.Name = "wall24";
-            this.wall24.Size = new System.Drawing.Size(69, 19);
+            this.wall24.Size = new System.Drawing.Size(52, 16);
             this.wall24.TabIndex = 27;
             this.wall24.TabStop = false;
             this.wall24.Tag = "wall";
@@ -611,10 +583,9 @@ namespace Pacman
             // 
             this.wall23.BackColor = System.Drawing.Color.Blue;
             this.wall23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall23.Location = new System.Drawing.Point(410, 108);
-            this.wall23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall23.Location = new System.Drawing.Point(308, 88);
             this.wall23.Name = "wall23";
-            this.wall23.Size = new System.Drawing.Size(18, 110);
+            this.wall23.Size = new System.Drawing.Size(14, 90);
             this.wall23.TabIndex = 26;
             this.wall23.TabStop = false;
             this.wall23.Tag = "wall";
@@ -623,10 +594,9 @@ namespace Pacman
             // 
             this.wall22.BackColor = System.Drawing.Color.Blue;
             this.wall22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall22.Location = new System.Drawing.Point(498, 159);
-            this.wall22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall22.Location = new System.Drawing.Point(374, 129);
             this.wall22.Name = "wall22";
-            this.wall22.Size = new System.Drawing.Size(101, 60);
+            this.wall22.Size = new System.Drawing.Size(76, 49);
             this.wall22.TabIndex = 25;
             this.wall22.TabStop = false;
             this.wall22.Tag = "wall";
@@ -636,10 +606,9 @@ namespace Pacman
             // 
             this.wall21.BackColor = System.Drawing.Color.Blue;
             this.wall21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall21.Location = new System.Drawing.Point(238, 159);
-            this.wall21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall21.Location = new System.Drawing.Point(178, 129);
             this.wall21.Name = "wall21";
-            this.wall21.Size = new System.Drawing.Size(101, 60);
+            this.wall21.Size = new System.Drawing.Size(76, 49);
             this.wall21.TabIndex = 24;
             this.wall21.TabStop = false;
             this.wall21.Tag = "wall";
@@ -648,10 +617,9 @@ namespace Pacman
             // 
             this.wall20.BackColor = System.Drawing.Color.Blue;
             this.wall20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall20.Location = new System.Drawing.Point(664, 159);
-            this.wall20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall20.Location = new System.Drawing.Point(498, 129);
             this.wall20.Name = "wall20";
-            this.wall20.Size = new System.Drawing.Size(69, 60);
+            this.wall20.Size = new System.Drawing.Size(52, 49);
             this.wall20.TabIndex = 22;
             this.wall20.TabStop = false;
             this.wall20.Tag = "wall";
@@ -660,10 +628,9 @@ namespace Pacman
             // 
             this.wall19.BackColor = System.Drawing.Color.Blue;
             this.wall19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall19.Location = new System.Drawing.Point(109, 159);
-            this.wall19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall19.Location = new System.Drawing.Point(82, 129);
             this.wall19.Name = "wall19";
-            this.wall19.Size = new System.Drawing.Size(69, 60);
+            this.wall19.Size = new System.Drawing.Size(52, 49);
             this.wall19.TabIndex = 21;
             this.wall19.TabStop = false;
             this.wall19.Tag = "wall";
@@ -672,10 +639,9 @@ namespace Pacman
             // 
             this.wall13.BackColor = System.Drawing.Color.Blue;
             this.wall13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall13.Location = new System.Drawing.Point(664, 393);
-            this.wall13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall13.Location = new System.Drawing.Point(498, 319);
             this.wall13.Name = "wall13";
-            this.wall13.Size = new System.Drawing.Size(18, 96);
+            this.wall13.Size = new System.Drawing.Size(14, 78);
             this.wall13.TabIndex = 20;
             this.wall13.TabStop = false;
             this.wall13.Tag = "wall";
@@ -684,10 +650,9 @@ namespace Pacman
             // 
             this.wall16.BackColor = System.Drawing.Color.Blue;
             this.wall16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall16.Location = new System.Drawing.Point(664, 554);
-            this.wall16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall16.Location = new System.Drawing.Point(498, 450);
             this.wall16.Name = "wall16";
-            this.wall16.Size = new System.Drawing.Size(18, 96);
+            this.wall16.Size = new System.Drawing.Size(14, 78);
             this.wall16.TabIndex = 19;
             this.wall16.TabStop = false;
             this.wall16.Tag = "wall";
@@ -696,10 +661,9 @@ namespace Pacman
             // 
             this.wall15.BackColor = System.Drawing.Color.Blue;
             this.wall15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall15.Location = new System.Drawing.Point(664, 540);
-            this.wall15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall15.Location = new System.Drawing.Point(498, 439);
             this.wall15.Name = "wall15";
-            this.wall15.Size = new System.Drawing.Size(130, 19);
+            this.wall15.Size = new System.Drawing.Size(98, 16);
             this.wall15.TabIndex = 18;
             this.wall15.TabStop = false;
             this.wall15.Tag = "wall";
@@ -708,10 +672,9 @@ namespace Pacman
             // 
             this.wall12.BackColor = System.Drawing.Color.Blue;
             this.wall12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall12.Location = new System.Drawing.Point(664, 377);
-            this.wall12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall12.Location = new System.Drawing.Point(498, 306);
             this.wall12.Name = "wall12";
-            this.wall12.Size = new System.Drawing.Size(130, 19);
+            this.wall12.Size = new System.Drawing.Size(98, 16);
             this.wall12.TabIndex = 17;
             this.wall12.TabStop = false;
             this.wall12.Tag = "wall";
@@ -720,10 +683,9 @@ namespace Pacman
             // 
             this.wall18.BackColor = System.Drawing.Color.Blue;
             this.wall18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall18.Location = new System.Drawing.Point(676, 630);
-            this.wall18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall18.Location = new System.Drawing.Point(507, 512);
             this.wall18.Name = "wall18";
-            this.wall18.Size = new System.Drawing.Size(118, 19);
+            this.wall18.Size = new System.Drawing.Size(89, 16);
             this.wall18.TabIndex = 16;
             this.wall18.TabStop = false;
             this.wall18.Tag = "wall";
@@ -732,10 +694,9 @@ namespace Pacman
             // 
             this.wall14.BackColor = System.Drawing.Color.Blue;
             this.wall14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall14.Location = new System.Drawing.Point(676, 469);
-            this.wall14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall14.Location = new System.Drawing.Point(507, 381);
             this.wall14.Name = "wall14";
-            this.wall14.Size = new System.Drawing.Size(118, 19);
+            this.wall14.Size = new System.Drawing.Size(89, 16);
             this.wall14.TabIndex = 15;
             this.wall14.TabStop = false;
             this.wall14.Tag = "wall";
@@ -744,10 +705,9 @@ namespace Pacman
             // 
             this.wall11.BackColor = System.Drawing.Color.Blue;
             this.wall11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall11.Location = new System.Drawing.Point(60, 630);
-            this.wall11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall11.Location = new System.Drawing.Point(45, 512);
             this.wall11.Name = "wall11";
-            this.wall11.Size = new System.Drawing.Size(118, 19);
+            this.wall11.Size = new System.Drawing.Size(89, 16);
             this.wall11.TabIndex = 14;
             this.wall11.TabStop = false;
             this.wall11.Tag = "wall";
@@ -756,10 +716,9 @@ namespace Pacman
             // 
             this.wall8.BackColor = System.Drawing.Color.Blue;
             this.wall8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall8.Location = new System.Drawing.Point(60, 469);
-            this.wall8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall8.Location = new System.Drawing.Point(45, 381);
             this.wall8.Name = "wall8";
-            this.wall8.Size = new System.Drawing.Size(118, 19);
+            this.wall8.Size = new System.Drawing.Size(89, 16);
             this.wall8.TabIndex = 13;
             this.wall8.TabStop = false;
             this.wall8.Tag = "wall";
@@ -768,10 +727,9 @@ namespace Pacman
             // 
             this.wall9.BackColor = System.Drawing.Color.Blue;
             this.wall9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall9.Location = new System.Drawing.Point(60, 540);
-            this.wall9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall9.Location = new System.Drawing.Point(45, 439);
             this.wall9.Name = "wall9";
-            this.wall9.Size = new System.Drawing.Size(118, 19);
+            this.wall9.Size = new System.Drawing.Size(89, 16);
             this.wall9.TabIndex = 12;
             this.wall9.TabStop = false;
             this.wall9.Tag = "wall";
@@ -780,10 +738,9 @@ namespace Pacman
             // 
             this.wall6.BackColor = System.Drawing.Color.Blue;
             this.wall6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall6.Location = new System.Drawing.Point(48, 377);
-            this.wall6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall6.Location = new System.Drawing.Point(36, 306);
             this.wall6.Name = "wall6";
-            this.wall6.Size = new System.Drawing.Size(118, 19);
+            this.wall6.Size = new System.Drawing.Size(89, 16);
             this.wall6.TabIndex = 11;
             this.wall6.TabStop = false;
             this.wall6.Tag = "wall";
@@ -792,10 +749,9 @@ namespace Pacman
             // 
             this.wall7.BackColor = System.Drawing.Color.Blue;
             this.wall7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall7.Location = new System.Drawing.Point(160, 377);
-            this.wall7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall7.Location = new System.Drawing.Point(120, 306);
             this.wall7.Name = "wall7";
-            this.wall7.Size = new System.Drawing.Size(18, 96);
+            this.wall7.Size = new System.Drawing.Size(14, 78);
             this.wall7.TabIndex = 10;
             this.wall7.TabStop = false;
             this.wall7.Tag = "wall";
@@ -804,10 +760,9 @@ namespace Pacman
             // 
             this.wall10.BackColor = System.Drawing.Color.Blue;
             this.wall10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall10.Location = new System.Drawing.Point(160, 554);
-            this.wall10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall10.Location = new System.Drawing.Point(120, 450);
             this.wall10.Name = "wall10";
-            this.wall10.Size = new System.Drawing.Size(18, 96);
+            this.wall10.Size = new System.Drawing.Size(14, 78);
             this.wall10.TabIndex = 9;
             this.wall10.TabStop = false;
             this.wall10.Tag = "wall";
@@ -816,10 +771,9 @@ namespace Pacman
             // 
             this.wall1.BackColor = System.Drawing.Color.Blue;
             this.wall1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall1.Location = new System.Drawing.Point(48, 108);
-            this.wall1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall1.Location = new System.Drawing.Point(36, 88);
             this.wall1.Name = "wall1";
-            this.wall1.Size = new System.Drawing.Size(18, 288);
+            this.wall1.Size = new System.Drawing.Size(14, 234);
             this.wall1.TabIndex = 8;
             this.wall1.TabStop = false;
             this.wall1.Tag = "wall";
@@ -828,10 +782,9 @@ namespace Pacman
             // 
             this.wall2.BackColor = System.Drawing.Color.Blue;
             this.wall2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall2.Location = new System.Drawing.Point(776, 108);
-            this.wall2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall2.Location = new System.Drawing.Point(582, 88);
             this.wall2.Name = "wall2";
-            this.wall2.Size = new System.Drawing.Size(18, 288);
+            this.wall2.Size = new System.Drawing.Size(14, 234);
             this.wall2.TabIndex = 7;
             this.wall2.TabStop = false;
             this.wall2.Tag = "wall";
@@ -840,10 +793,9 @@ namespace Pacman
             // 
             this.wall3.BackColor = System.Drawing.Color.Blue;
             this.wall3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall3.Location = new System.Drawing.Point(48, 630);
-            this.wall3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall3.Location = new System.Drawing.Point(36, 512);
             this.wall3.Name = "wall3";
-            this.wall3.Size = new System.Drawing.Size(18, 221);
+            this.wall3.Size = new System.Drawing.Size(14, 180);
             this.wall3.TabIndex = 6;
             this.wall3.TabStop = false;
             this.wall3.Tag = "wall";
@@ -852,10 +804,9 @@ namespace Pacman
             // 
             this.wall4.BackColor = System.Drawing.Color.Blue;
             this.wall4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall4.Location = new System.Drawing.Point(776, 646);
-            this.wall4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall4.Location = new System.Drawing.Point(582, 525);
             this.wall4.Name = "wall4";
-            this.wall4.Size = new System.Drawing.Size(18, 205);
+            this.wall4.Size = new System.Drawing.Size(14, 167);
             this.wall4.TabIndex = 5;
             this.wall4.TabStop = false;
             this.wall4.Tag = "wall";
@@ -864,10 +815,9 @@ namespace Pacman
             // 
             this.wall5.BackColor = System.Drawing.Color.Blue;
             this.wall5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall5.Location = new System.Drawing.Point(48, 833);
-            this.wall5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall5.Location = new System.Drawing.Point(36, 677);
             this.wall5.Name = "wall5";
-            this.wall5.Size = new System.Drawing.Size(734, 18);
+            this.wall5.Size = new System.Drawing.Size(551, 15);
             this.wall5.TabIndex = 1;
             this.wall5.TabStop = false;
             this.wall5.Tag = "wall";
@@ -876,10 +826,9 @@ namespace Pacman
             // 
             this.wall0.BackColor = System.Drawing.Color.Blue;
             this.wall0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wall0.Location = new System.Drawing.Point(48, 94);
-            this.wall0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wall0.Location = new System.Drawing.Point(36, 76);
             this.wall0.Name = "wall0";
-            this.wall0.Size = new System.Drawing.Size(746, 18);
+            this.wall0.Size = new System.Drawing.Size(560, 15);
             this.wall0.TabIndex = 0;
             this.wall0.TabStop = false;
             this.wall0.Tag = "wall";
@@ -888,10 +837,9 @@ namespace Pacman
             // 
             this.Pellet2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet2.Location = new System.Drawing.Point(133, 246);
-            this.Pellet2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet2.Location = new System.Drawing.Point(100, 200);
             this.Pellet2.Name = "Pellet2";
-            this.Pellet2.Size = new System.Drawing.Size(13, 12);
+            this.Pellet2.Size = new System.Drawing.Size(10, 10);
             this.Pellet2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet2.TabIndex = 56;
             this.Pellet2.TabStop = false;
@@ -900,10 +848,9 @@ namespace Pacman
             // 
             this.Pellet3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet3.Location = new System.Drawing.Point(188, 246);
-            this.Pellet3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet3.Location = new System.Drawing.Point(141, 200);
             this.Pellet3.Name = "Pellet3";
-            this.Pellet3.Size = new System.Drawing.Size(13, 12);
+            this.Pellet3.Size = new System.Drawing.Size(10, 10);
             this.Pellet3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet3.TabIndex = 57;
             this.Pellet3.TabStop = false;
@@ -912,10 +859,9 @@ namespace Pacman
             // 
             this.Pellet4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet4.Location = new System.Drawing.Point(244, 246);
-            this.Pellet4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet4.Location = new System.Drawing.Point(183, 200);
             this.Pellet4.Name = "Pellet4";
-            this.Pellet4.Size = new System.Drawing.Size(13, 12);
+            this.Pellet4.Size = new System.Drawing.Size(10, 10);
             this.Pellet4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet4.TabIndex = 58;
             this.Pellet4.TabStop = false;
@@ -924,10 +870,9 @@ namespace Pacman
             // 
             this.Pellet5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet5.Location = new System.Drawing.Point(317, 246);
-            this.Pellet5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet5.Location = new System.Drawing.Point(238, 200);
             this.Pellet5.Name = "Pellet5";
-            this.Pellet5.Size = new System.Drawing.Size(13, 12);
+            this.Pellet5.Size = new System.Drawing.Size(10, 10);
             this.Pellet5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet5.TabIndex = 59;
             this.Pellet5.TabStop = false;
@@ -936,10 +881,9 @@ namespace Pacman
             // 
             this.Pellet6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet6.Location = new System.Drawing.Point(385, 246);
-            this.Pellet6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet6.Location = new System.Drawing.Point(289, 200);
             this.Pellet6.Name = "Pellet6";
-            this.Pellet6.Size = new System.Drawing.Size(13, 12);
+            this.Pellet6.Size = new System.Drawing.Size(10, 10);
             this.Pellet6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet6.TabIndex = 60;
             this.Pellet6.TabStop = false;
@@ -948,10 +892,9 @@ namespace Pacman
             // 
             this.Pellet7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet7.Location = new System.Drawing.Point(464, 246);
-            this.Pellet7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet7.Location = new System.Drawing.Point(348, 200);
             this.Pellet7.Name = "Pellet7";
-            this.Pellet7.Size = new System.Drawing.Size(13, 12);
+            this.Pellet7.Size = new System.Drawing.Size(10, 10);
             this.Pellet7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet7.TabIndex = 61;
             this.Pellet7.TabStop = false;
@@ -960,10 +903,9 @@ namespace Pacman
             // 
             this.Pellet8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet8.Location = new System.Drawing.Point(525, 246);
-            this.Pellet8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet8.Location = new System.Drawing.Point(394, 200);
             this.Pellet8.Name = "Pellet8";
-            this.Pellet8.Size = new System.Drawing.Size(13, 12);
+            this.Pellet8.Size = new System.Drawing.Size(10, 10);
             this.Pellet8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet8.TabIndex = 62;
             this.Pellet8.TabStop = false;
@@ -972,10 +914,9 @@ namespace Pacman
             // 
             this.Pellet9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet9.Location = new System.Drawing.Point(581, 246);
-            this.Pellet9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet9.Location = new System.Drawing.Point(436, 200);
             this.Pellet9.Name = "Pellet9";
-            this.Pellet9.Size = new System.Drawing.Size(13, 12);
+            this.Pellet9.Size = new System.Drawing.Size(10, 10);
             this.Pellet9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet9.TabIndex = 63;
             this.Pellet9.TabStop = false;
@@ -984,10 +925,9 @@ namespace Pacman
             // 
             this.Pellet10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet10.Location = new System.Drawing.Point(641, 246);
-            this.Pellet10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet10.Location = new System.Drawing.Point(481, 200);
             this.Pellet10.Name = "Pellet10";
-            this.Pellet10.Size = new System.Drawing.Size(13, 12);
+            this.Pellet10.Size = new System.Drawing.Size(10, 10);
             this.Pellet10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet10.TabIndex = 64;
             this.Pellet10.TabStop = false;
@@ -996,10 +936,9 @@ namespace Pacman
             // 
             this.Pellet11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet11.Location = new System.Drawing.Point(702, 246);
-            this.Pellet11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet11.Location = new System.Drawing.Point(526, 200);
             this.Pellet11.Name = "Pellet11";
-            this.Pellet11.Size = new System.Drawing.Size(13, 12);
+            this.Pellet11.Size = new System.Drawing.Size(10, 10);
             this.Pellet11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet11.TabIndex = 65;
             this.Pellet11.TabStop = false;
@@ -1008,10 +947,9 @@ namespace Pacman
             // 
             this.Pellet13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet13.Location = new System.Drawing.Point(754, 246);
-            this.Pellet13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet13.Location = new System.Drawing.Point(566, 200);
             this.Pellet13.Name = "Pellet13";
-            this.Pellet13.Size = new System.Drawing.Size(13, 12);
+            this.Pellet13.Size = new System.Drawing.Size(10, 10);
             this.Pellet13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet13.TabIndex = 66;
             this.Pellet13.TabStop = false;
@@ -1020,10 +958,9 @@ namespace Pacman
             // 
             this.Pellet14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet14.Location = new System.Drawing.Point(754, 673);
-            this.Pellet14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet14.Location = new System.Drawing.Point(566, 547);
             this.Pellet14.Name = "Pellet14";
-            this.Pellet14.Size = new System.Drawing.Size(13, 12);
+            this.Pellet14.Size = new System.Drawing.Size(10, 10);
             this.Pellet14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet14.TabIndex = 78;
             this.Pellet14.TabStop = false;
@@ -1032,10 +969,9 @@ namespace Pacman
             // 
             this.Pellet15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet15.Location = new System.Drawing.Point(702, 673);
-            this.Pellet15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet15.Location = new System.Drawing.Point(526, 547);
             this.Pellet15.Name = "Pellet15";
-            this.Pellet15.Size = new System.Drawing.Size(13, 12);
+            this.Pellet15.Size = new System.Drawing.Size(10, 10);
             this.Pellet15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet15.TabIndex = 77;
             this.Pellet15.TabStop = false;
@@ -1044,10 +980,9 @@ namespace Pacman
             // 
             this.Pellet16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet16.Location = new System.Drawing.Point(641, 673);
-            this.Pellet16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet16.Location = new System.Drawing.Point(481, 547);
             this.Pellet16.Name = "Pellet16";
-            this.Pellet16.Size = new System.Drawing.Size(13, 12);
+            this.Pellet16.Size = new System.Drawing.Size(10, 10);
             this.Pellet16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet16.TabIndex = 76;
             this.Pellet16.TabStop = false;
@@ -1056,10 +991,9 @@ namespace Pacman
             // 
             this.Pellet17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet17.Location = new System.Drawing.Point(540, 673);
-            this.Pellet17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet17.Location = new System.Drawing.Point(405, 547);
             this.Pellet17.Name = "Pellet17";
-            this.Pellet17.Size = new System.Drawing.Size(13, 12);
+            this.Pellet17.Size = new System.Drawing.Size(10, 10);
             this.Pellet17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet17.TabIndex = 75;
             this.Pellet17.TabStop = false;
@@ -1068,10 +1002,9 @@ namespace Pacman
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(464, 606);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(348, 492);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox5.Size = new System.Drawing.Size(10, 10);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 74;
             this.pictureBox5.TabStop = false;
@@ -1081,10 +1014,9 @@ namespace Pacman
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(464, 673);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(348, 547);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox6.Size = new System.Drawing.Size(10, 10);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 73;
             this.pictureBox6.TabStop = false;
@@ -1093,10 +1025,9 @@ namespace Pacman
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(364, 673);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Location = new System.Drawing.Point(273, 547);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox8.Size = new System.Drawing.Size(10, 10);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 71;
             this.pictureBox8.TabStop = false;
@@ -1105,10 +1036,9 @@ namespace Pacman
             // 
             this.pictureBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Location = new System.Drawing.Point(304, 673);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Location = new System.Drawing.Point(228, 547);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox9.Size = new System.Drawing.Size(10, 10);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 70;
             this.pictureBox9.TabStop = false;
@@ -1117,10 +1047,9 @@ namespace Pacman
             // 
             this.pictureBox10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Location = new System.Drawing.Point(238, 673);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Location = new System.Drawing.Point(178, 547);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox10.Size = new System.Drawing.Size(10, 10);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 69;
             this.pictureBox10.TabStop = false;
@@ -1129,10 +1058,9 @@ namespace Pacman
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox11.Location = new System.Drawing.Point(165, 673);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Location = new System.Drawing.Point(124, 547);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox11.Size = new System.Drawing.Size(10, 10);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 68;
             this.pictureBox11.TabStop = false;
@@ -1141,10 +1069,9 @@ namespace Pacman
             // 
             this.pictureBox12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox12.Location = new System.Drawing.Point(84, 673);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Location = new System.Drawing.Point(63, 547);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox12.Size = new System.Drawing.Size(10, 10);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 67;
             this.pictureBox12.TabStop = false;
@@ -1153,10 +1080,9 @@ namespace Pacman
             // 
             this.pictureBox13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox13.Location = new System.Drawing.Point(385, 133);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Location = new System.Drawing.Point(289, 108);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox13.Size = new System.Drawing.Size(10, 10);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 84;
             this.pictureBox13.TabStop = false;
@@ -1165,10 +1091,9 @@ namespace Pacman
             // 
             this.pictureBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox14.Location = new System.Drawing.Point(317, 133);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox14.Location = new System.Drawing.Point(238, 108);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox14.Size = new System.Drawing.Size(10, 10);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 83;
             this.pictureBox14.TabStop = false;
@@ -1177,10 +1102,9 @@ namespace Pacman
             // 
             this.pictureBox15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox15.Location = new System.Drawing.Point(244, 133);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox15.Location = new System.Drawing.Point(183, 108);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox15.Size = new System.Drawing.Size(10, 10);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 82;
             this.pictureBox15.TabStop = false;
@@ -1189,10 +1113,9 @@ namespace Pacman
             // 
             this.pictureBox16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox16.Location = new System.Drawing.Point(188, 133);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox16.Location = new System.Drawing.Point(141, 108);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox16.Size = new System.Drawing.Size(10, 10);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 81;
             this.pictureBox16.TabStop = false;
@@ -1201,10 +1124,9 @@ namespace Pacman
             // 
             this.pictureBox17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox17.Location = new System.Drawing.Point(133, 133);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox17.Location = new System.Drawing.Point(100, 108);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox17.Size = new System.Drawing.Size(10, 10);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 80;
             this.pictureBox17.TabStop = false;
@@ -1213,10 +1135,9 @@ namespace Pacman
             // 
             this.pictureBox18.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox18.Location = new System.Drawing.Point(74, 133);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox18.Location = new System.Drawing.Point(56, 108);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox18.Size = new System.Drawing.Size(10, 10);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 79;
             this.pictureBox18.TabStop = false;
@@ -1226,10 +1147,9 @@ namespace Pacman
             // 
             this.pictureBox19.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox19.Location = new System.Drawing.Point(753, 133);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox19.Location = new System.Drawing.Point(565, 108);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox19.Size = new System.Drawing.Size(10, 10);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 90;
             this.pictureBox19.TabStop = false;
@@ -1238,10 +1158,9 @@ namespace Pacman
             // 
             this.pictureBox20.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox20.Location = new System.Drawing.Point(685, 133);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox20.Location = new System.Drawing.Point(514, 108);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox20.Size = new System.Drawing.Size(10, 10);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 89;
             this.pictureBox20.TabStop = false;
@@ -1250,10 +1169,9 @@ namespace Pacman
             // 
             this.pictureBox21.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox21.Location = new System.Drawing.Point(612, 133);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox21.Location = new System.Drawing.Point(459, 108);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox21.Size = new System.Drawing.Size(10, 10);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 88;
             this.pictureBox21.TabStop = false;
@@ -1262,10 +1180,9 @@ namespace Pacman
             // 
             this.pictureBox22.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox22.Location = new System.Drawing.Point(556, 133);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox22.Location = new System.Drawing.Point(417, 108);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox22.Size = new System.Drawing.Size(10, 10);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 87;
             this.pictureBox22.TabStop = false;
@@ -1274,10 +1191,9 @@ namespace Pacman
             // 
             this.pictureBox23.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox23.Location = new System.Drawing.Point(501, 133);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox23.Location = new System.Drawing.Point(376, 108);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox23.Size = new System.Drawing.Size(10, 10);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 86;
             this.pictureBox23.TabStop = false;
@@ -1286,10 +1202,9 @@ namespace Pacman
             // 
             this.pictureBox24.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox24.Location = new System.Drawing.Point(442, 133);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox24.Location = new System.Drawing.Point(332, 108);
             this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox24.Size = new System.Drawing.Size(10, 10);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox24.TabIndex = 85;
             this.pictureBox24.TabStop = false;
@@ -1298,10 +1213,9 @@ namespace Pacman
             // 
             this.pictureBox25.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox25.Location = new System.Drawing.Point(754, 814);
-            this.pictureBox25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox25.Location = new System.Drawing.Point(566, 661);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox25.Size = new System.Drawing.Size(10, 10);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 102;
             this.pictureBox25.TabStop = false;
@@ -1310,10 +1224,9 @@ namespace Pacman
             // 
             this.pictureBox26.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox26.Location = new System.Drawing.Point(702, 814);
-            this.pictureBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox26.Location = new System.Drawing.Point(526, 661);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox26.Size = new System.Drawing.Size(10, 10);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 101;
             this.pictureBox26.TabStop = false;
@@ -1322,10 +1235,9 @@ namespace Pacman
             // 
             this.pictureBox27.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox27.Location = new System.Drawing.Point(641, 814);
-            this.pictureBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox27.Location = new System.Drawing.Point(481, 661);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox27.Size = new System.Drawing.Size(10, 10);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox27.TabIndex = 100;
             this.pictureBox27.TabStop = false;
@@ -1334,10 +1246,9 @@ namespace Pacman
             // 
             this.pictureBox28.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox28.Location = new System.Drawing.Point(581, 814);
-            this.pictureBox28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox28.Location = new System.Drawing.Point(436, 661);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox28.Size = new System.Drawing.Size(10, 10);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox28.TabIndex = 99;
             this.pictureBox28.TabStop = false;
@@ -1346,10 +1257,9 @@ namespace Pacman
             // 
             this.pictureBox29.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox29.Location = new System.Drawing.Point(525, 814);
-            this.pictureBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox29.Location = new System.Drawing.Point(394, 661);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox29.Size = new System.Drawing.Size(10, 10);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 98;
             this.pictureBox29.TabStop = false;
@@ -1358,10 +1268,9 @@ namespace Pacman
             // 
             this.pictureBox30.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox30.Location = new System.Drawing.Point(464, 814);
-            this.pictureBox30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox30.Location = new System.Drawing.Point(348, 661);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox30.Size = new System.Drawing.Size(10, 10);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 97;
             this.pictureBox30.TabStop = false;
@@ -1370,10 +1279,9 @@ namespace Pacman
             // 
             this.pictureBox31.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox31.Location = new System.Drawing.Point(410, 814);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox31.Location = new System.Drawing.Point(308, 661);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox31.Size = new System.Drawing.Size(10, 10);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox31.TabIndex = 96;
             this.pictureBox31.TabStop = false;
@@ -1382,10 +1290,9 @@ namespace Pacman
             // 
             this.pictureBox32.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox32.Location = new System.Drawing.Point(364, 814);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox32.Location = new System.Drawing.Point(273, 661);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox32.Size = new System.Drawing.Size(10, 10);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox32.TabIndex = 95;
             this.pictureBox32.TabStop = false;
@@ -1394,10 +1301,9 @@ namespace Pacman
             // 
             this.pictureBox33.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox33.Location = new System.Drawing.Point(258, 814);
-            this.pictureBox33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox33.Location = new System.Drawing.Point(194, 661);
             this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox33.Size = new System.Drawing.Size(10, 10);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 94;
             this.pictureBox33.TabStop = false;
@@ -1406,10 +1312,9 @@ namespace Pacman
             // 
             this.pictureBox34.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox34.Location = new System.Drawing.Point(204, 814);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox34.Location = new System.Drawing.Point(153, 661);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox34.Size = new System.Drawing.Size(10, 10);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox34.TabIndex = 93;
             this.pictureBox34.TabStop = false;
@@ -1418,10 +1323,9 @@ namespace Pacman
             // 
             this.pictureBox35.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox35.Location = new System.Drawing.Point(144, 814);
-            this.pictureBox35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox35.Location = new System.Drawing.Point(108, 661);
             this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox35.Size = new System.Drawing.Size(10, 10);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 92;
             this.pictureBox35.TabStop = false;
@@ -1430,10 +1334,9 @@ namespace Pacman
             // 
             this.pictureBox36.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox36.Location = new System.Drawing.Point(84, 814);
-            this.pictureBox36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox36.Location = new System.Drawing.Point(63, 661);
             this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox36.Size = new System.Drawing.Size(10, 10);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 91;
             this.pictureBox36.TabStop = false;
@@ -1442,10 +1345,9 @@ namespace Pacman
             // 
             this.pictureBox37.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox37.Location = new System.Drawing.Point(744, 343);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox37.Location = new System.Drawing.Point(558, 279);
             this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox37.Size = new System.Drawing.Size(10, 10);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox37.TabIndex = 105;
             this.pictureBox37.TabStop = false;
@@ -1454,10 +1356,9 @@ namespace Pacman
             // 
             this.pictureBox38.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox38.Location = new System.Drawing.Point(676, 343);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox38.Location = new System.Drawing.Point(507, 279);
             this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox38.Size = new System.Drawing.Size(10, 10);
             this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox38.TabIndex = 104;
             this.pictureBox38.TabStop = false;
@@ -1466,10 +1367,9 @@ namespace Pacman
             // 
             this.pictureBox39.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox39.Location = new System.Drawing.Point(602, 343);
-            this.pictureBox39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox39.Location = new System.Drawing.Point(452, 279);
             this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox39.Size = new System.Drawing.Size(10, 10);
             this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox39.TabIndex = 103;
             this.pictureBox39.TabStop = false;
@@ -1478,10 +1378,9 @@ namespace Pacman
             // 
             this.pictureBox40.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox40.Location = new System.Drawing.Point(221, 343);
-            this.pictureBox40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox40.Location = new System.Drawing.Point(166, 279);
             this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox40.Size = new System.Drawing.Size(10, 10);
             this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox40.TabIndex = 108;
             this.pictureBox40.TabStop = false;
@@ -1490,10 +1389,9 @@ namespace Pacman
             // 
             this.pictureBox41.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox41.Location = new System.Drawing.Point(153, 343);
-            this.pictureBox41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox41.Location = new System.Drawing.Point(115, 279);
             this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox41.Size = new System.Drawing.Size(10, 10);
             this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox41.TabIndex = 107;
             this.pictureBox41.TabStop = false;
@@ -1502,10 +1400,9 @@ namespace Pacman
             // 
             this.pictureBox42.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox42.Location = new System.Drawing.Point(80, 343);
-            this.pictureBox42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox42.Location = new System.Drawing.Point(60, 279);
             this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox42.Size = new System.Drawing.Size(10, 10);
             this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox42.TabIndex = 106;
             this.pictureBox42.TabStop = false;
@@ -1514,10 +1411,9 @@ namespace Pacman
             // 
             this.pictureBox43.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox43.Location = new System.Drawing.Point(208, 740);
-            this.pictureBox43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox43.Location = new System.Drawing.Point(156, 601);
             this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox43.Size = new System.Drawing.Size(10, 10);
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox43.TabIndex = 111;
             this.pictureBox43.TabStop = false;
@@ -1526,10 +1422,9 @@ namespace Pacman
             // 
             this.pictureBox44.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox44.Location = new System.Drawing.Point(148, 740);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox44.Location = new System.Drawing.Point(111, 601);
             this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox44.Size = new System.Drawing.Size(10, 10);
             this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox44.TabIndex = 110;
             this.pictureBox44.TabStop = false;
@@ -1538,10 +1433,9 @@ namespace Pacman
             // 
             this.pictureBox46.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox46.Location = new System.Drawing.Point(753, 740);
-            this.pictureBox46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox46.Location = new System.Drawing.Point(565, 601);
             this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox46.Size = new System.Drawing.Size(10, 10);
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox46.TabIndex = 114;
             this.pictureBox46.TabStop = false;
@@ -1550,10 +1444,9 @@ namespace Pacman
             // 
             this.pictureBox47.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox47.Location = new System.Drawing.Point(685, 740);
-            this.pictureBox47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox47.Location = new System.Drawing.Point(514, 601);
             this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox47.Size = new System.Drawing.Size(10, 10);
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox47.TabIndex = 113;
             this.pictureBox47.TabStop = false;
@@ -1562,10 +1455,9 @@ namespace Pacman
             // 
             this.pictureBox48.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox48.Location = new System.Drawing.Point(625, 740);
-            this.pictureBox48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox48.Location = new System.Drawing.Point(469, 601);
             this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox48.Size = new System.Drawing.Size(10, 10);
             this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox48.TabIndex = 112;
             this.pictureBox48.TabStop = false;
@@ -1574,10 +1466,9 @@ namespace Pacman
             // 
             this.pictureBox50.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox50.Location = new System.Drawing.Point(540, 742);
-            this.pictureBox50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox50.Location = new System.Drawing.Point(405, 603);
             this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox50.Size = new System.Drawing.Size(10, 10);
             this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox50.TabIndex = 116;
             this.pictureBox50.TabStop = false;
@@ -1586,10 +1477,9 @@ namespace Pacman
             // 
             this.pictureBox51.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox51.Location = new System.Drawing.Point(464, 742);
-            this.pictureBox51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox51.Location = new System.Drawing.Point(348, 603);
             this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox51.Size = new System.Drawing.Size(10, 10);
             this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox51.TabIndex = 115;
             this.pictureBox51.TabStop = false;
@@ -1598,10 +1488,9 @@ namespace Pacman
             // 
             this.pictureBox49.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox49.Location = new System.Drawing.Point(364, 742);
-            this.pictureBox49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox49.Location = new System.Drawing.Point(273, 603);
             this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox49.Size = new System.Drawing.Size(10, 10);
             this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox49.TabIndex = 118;
             this.pictureBox49.TabStop = false;
@@ -1610,10 +1499,9 @@ namespace Pacman
             // 
             this.pictureBox52.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox52.Location = new System.Drawing.Point(288, 742);
-            this.pictureBox52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox52.Location = new System.Drawing.Point(216, 603);
             this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox52.Size = new System.Drawing.Size(10, 10);
             this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox52.TabIndex = 117;
             this.pictureBox52.TabStop = false;
@@ -1622,10 +1510,9 @@ namespace Pacman
             // 
             this.pictureBox53.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox53.Location = new System.Drawing.Point(84, 740);
-            this.pictureBox53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox53.Location = new System.Drawing.Point(63, 601);
             this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox53.Size = new System.Drawing.Size(10, 10);
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox53.TabIndex = 119;
             this.pictureBox53.TabStop = false;
@@ -1634,10 +1521,9 @@ namespace Pacman
             // 
             this.pictureBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(385, 331);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Location = new System.Drawing.Point(289, 269);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox7.Size = new System.Drawing.Size(10, 10);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 121;
             this.pictureBox7.TabStop = false;
@@ -1646,10 +1532,9 @@ namespace Pacman
             // 
             this.pictureBox45.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox45.Location = new System.Drawing.Point(309, 331);
-            this.pictureBox45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox45.Location = new System.Drawing.Point(232, 269);
             this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox45.Size = new System.Drawing.Size(10, 10);
             this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox45.TabIndex = 120;
             this.pictureBox45.TabStop = false;
@@ -1658,10 +1543,9 @@ namespace Pacman
             // 
             this.pictureBox54.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox54.Location = new System.Drawing.Point(540, 331);
-            this.pictureBox54.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox54.Location = new System.Drawing.Point(405, 269);
             this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(13, 12);
+            this.pictureBox54.Size = new System.Drawing.Size(10, 10);
             this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox54.TabIndex = 123;
             this.pictureBox54.TabStop = false;
@@ -1670,23 +1554,21 @@ namespace Pacman
             // 
             this.Pellet55.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Pellet55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pellet55.Location = new System.Drawing.Point(464, 331);
-            this.Pellet55.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pellet55.Location = new System.Drawing.Point(348, 269);
             this.Pellet55.Name = "Pellet55";
-            this.Pellet55.Size = new System.Drawing.Size(13, 12);
+            this.Pellet55.Size = new System.Drawing.Size(10, 10);
             this.Pellet55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet55.TabIndex = 122;
             this.Pellet55.TabStop = false;
             // 
-            // Pacman
+            // pacman
             // 
-            this.Pacman.BackColor = System.Drawing.Color.Yellow;
-            this.Pacman.Location = new System.Drawing.Point(184, 501);
-            this.Pacman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Pacman.Name = "Pacman";
-            this.Pacman.Size = new System.Drawing.Size(33, 31);
-            this.Pacman.TabIndex = 124;
-            this.Pacman.TabStop = false;
+            this.pacman.BackColor = System.Drawing.Color.Yellow;
+            this.pacman.Location = new System.Drawing.Point(138, 407);
+            this.pacman.Name = "pacman";
+            this.pacman.Size = new System.Drawing.Size(25, 25);
+            this.pacman.TabIndex = 124;
+            this.pacman.TabStop = false;
             // 
             // gametimer
             // 
@@ -1697,9 +1579,10 @@ namespace Pacman
             this.LivesText.AutoSize = true;
             this.LivesText.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LivesText.ForeColor = System.Drawing.Color.White;
-            this.LivesText.Location = new System.Drawing.Point(52, 34);
+            this.LivesText.Location = new System.Drawing.Point(39, 28);
+            this.LivesText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LivesText.Name = "LivesText";
-            this.LivesText.Size = new System.Drawing.Size(109, 44);
+            this.LivesText.Size = new System.Drawing.Size(85, 36);
             this.LivesText.TabIndex = 125;
             this.LivesText.Text = "Lives";
             // 
@@ -1708,9 +1591,10 @@ namespace Pacman
             this.ScoreText.AutoSize = true;
             this.ScoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScoreText.ForeColor = System.Drawing.Color.White;
-            this.ScoreText.Location = new System.Drawing.Point(402, 34);
+            this.ScoreText.Location = new System.Drawing.Point(302, 28);
+            this.ScoreText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ScoreText.Name = "ScoreText";
-            this.ScoreText.Size = new System.Drawing.Size(119, 44);
+            this.ScoreText.Size = new System.Drawing.Size(93, 36);
             this.ScoreText.TabIndex = 126;
             this.ScoreText.Text = "Score";
             // 
@@ -1719,9 +1603,10 @@ namespace Pacman
             this.LivesCounter.AutoSize = true;
             this.LivesCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LivesCounter.ForeColor = System.Drawing.Color.White;
-            this.LivesCounter.Location = new System.Drawing.Point(167, 34);
+            this.LivesCounter.Location = new System.Drawing.Point(125, 28);
+            this.LivesCounter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LivesCounter.Name = "LivesCounter";
-            this.LivesCounter.Size = new System.Drawing.Size(41, 44);
+            this.LivesCounter.Size = new System.Drawing.Size(32, 36);
             this.LivesCounter.TabIndex = 127;
             this.LivesCounter.Text = "3";
             // 
@@ -1730,23 +1615,24 @@ namespace Pacman
             this.ScoreCounter.AutoSize = true;
             this.ScoreCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScoreCounter.ForeColor = System.Drawing.Color.White;
-            this.ScoreCounter.Location = new System.Drawing.Point(530, 34);
+            this.ScoreCounter.Location = new System.Drawing.Point(398, 28);
+            this.ScoreCounter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ScoreCounter.Name = "ScoreCounter";
-            this.ScoreCounter.Size = new System.Drawing.Size(41, 44);
+            this.ScoreCounter.Size = new System.Drawing.Size(32, 36);
             this.ScoreCounter.TabIndex = 128;
             this.ScoreCounter.Text = "0";
             // 
             // GameScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(845, 875);
+            this.ClientSize = new System.Drawing.Size(634, 711);
             this.Controls.Add(this.ScoreCounter);
             this.Controls.Add(this.LivesCounter);
             this.Controls.Add(this.ScoreText);
             this.Controls.Add(this.LivesText);
-            this.Controls.Add(this.Pacman);
+            this.Controls.Add(this.pacman);
             this.Controls.Add(this.pictureBox54);
             this.Controls.Add(this.Pellet55);
             this.Controls.Add(this.pictureBox7);
@@ -1864,10 +1750,9 @@ namespace Pacman
             this.Controls.Add(this.wall4);
             this.Controls.Add(this.wall5);
             this.Controls.Add(this.wall0);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GameScreen";
             this.Text = "PacMan";
-            this.Load += new System.EventHandler(this.GameScreen_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             ((System.ComponentModel.ISupportInitialize)(this.Pellet1)).EndInit();
@@ -1987,7 +1872,7 @@ namespace Pacman
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pellet55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pacman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacman)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2112,7 +1997,7 @@ namespace Pacman
         private System.Windows.Forms.PictureBox pictureBox45;
         private System.Windows.Forms.PictureBox pictureBox54;
         private System.Windows.Forms.PictureBox Pellet55;
-        private System.Windows.Forms.PictureBox Pacman;
+        private System.Windows.Forms.PictureBox pacman;
         private System.Windows.Forms.Timer gametimer;
         private System.Windows.Forms.Label LivesText;
         private System.Windows.Forms.Label ScoreText;

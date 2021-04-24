@@ -18,6 +18,9 @@ namespace Pacman
         bool goright;
 
         int speed = 5;
+
+        int score = 0;
+
         public GameScreen()
         {
             InitializeComponent();
@@ -38,6 +41,9 @@ namespace Pacman
         //Used to move pacman when a key is pressed down
         private void keyisdown(object sender, KeyEventArgs e)
         {
+
+            ScoreCounter.Text = "" + score;
+
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 goleft = true;
@@ -73,6 +79,22 @@ namespace Pacman
                 pacman.Top -= speed;
             }
 
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox)
+                {
+                    if ((string)x.Tag == "pellet" && x.Visible == true)
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            score += 1;
+                            x.Visible = false;
+
+                        }
+                    }
+                }
+            }
+
 
         }
 
@@ -97,6 +119,7 @@ namespace Pacman
             }
         }
 
+
         //game timer
         private void gametimer_Tick(object sender, EventArgs e)
         {
@@ -105,18 +128,22 @@ namespace Pacman
             //adding wall functionality
             foreach (Control x in this.Controls)
             {
-                if ( x is PictureBox && x.Tag == "wall")
+                if (x is PictureBox && x.Tag == "wall")
                 {
                     if (((PictureBox)x).Bounds.IntersectsWith(pacman.Bounds))
-                    {
+                        {
                         goleft = false;
                         goright = false;
                         goup = false;
                         godown = false;
                     }
-
                 }
             }
+        }
+
+        private void gameOver(string message)
+        {
+            gametimer.Stop();
         }
     }
 }

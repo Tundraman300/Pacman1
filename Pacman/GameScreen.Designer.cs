@@ -30,6 +30,7 @@ namespace Pacman
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameScreen));
             this.Pellet1 = new System.Windows.Forms.PictureBox();
             this.wall50 = new System.Windows.Forms.PictureBox();
             this.wall46 = new System.Windows.Forms.PictureBox();
@@ -275,14 +276,15 @@ namespace Pacman
             // 
             // Pellet1
             // 
-            this.Pellet1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet1.Image = ((System.Drawing.Image)(resources.GetObject("Pellet1.Image")));
             this.Pellet1.Location = new System.Drawing.Point(56, 200);
             this.Pellet1.Name = "Pellet1";
             this.Pellet1.Size = new System.Drawing.Size(10, 10);
             this.Pellet1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet1.TabIndex = 55;
             this.Pellet1.TabStop = false;
+            this.Pellet1.Tag = "pellet";
             // 
             // wall50
             // 
@@ -835,731 +837,796 @@ namespace Pacman
             // 
             // Pellet2
             // 
-            this.Pellet2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet2.Image = ((System.Drawing.Image)(resources.GetObject("Pellet2.Image")));
             this.Pellet2.Location = new System.Drawing.Point(100, 200);
             this.Pellet2.Name = "Pellet2";
             this.Pellet2.Size = new System.Drawing.Size(10, 10);
             this.Pellet2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet2.TabIndex = 56;
             this.Pellet2.TabStop = false;
+            this.Pellet2.Tag = "pellet";
             // 
             // Pellet3
             // 
-            this.Pellet3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet3.Image = ((System.Drawing.Image)(resources.GetObject("Pellet3.Image")));
             this.Pellet3.Location = new System.Drawing.Point(141, 200);
             this.Pellet3.Name = "Pellet3";
             this.Pellet3.Size = new System.Drawing.Size(10, 10);
             this.Pellet3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet3.TabIndex = 57;
             this.Pellet3.TabStop = false;
+            this.Pellet3.Tag = "pellet";
             // 
             // Pellet4
             // 
-            this.Pellet4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet4.Image = ((System.Drawing.Image)(resources.GetObject("Pellet4.Image")));
             this.Pellet4.Location = new System.Drawing.Point(183, 200);
             this.Pellet4.Name = "Pellet4";
             this.Pellet4.Size = new System.Drawing.Size(10, 10);
             this.Pellet4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet4.TabIndex = 58;
             this.Pellet4.TabStop = false;
+            this.Pellet4.Tag = "pellet";
             // 
             // Pellet5
             // 
-            this.Pellet5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet5.Image = ((System.Drawing.Image)(resources.GetObject("Pellet5.Image")));
             this.Pellet5.Location = new System.Drawing.Point(238, 200);
             this.Pellet5.Name = "Pellet5";
             this.Pellet5.Size = new System.Drawing.Size(10, 10);
             this.Pellet5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet5.TabIndex = 59;
             this.Pellet5.TabStop = false;
+            this.Pellet5.Tag = "pellet";
             // 
             // Pellet6
             // 
-            this.Pellet6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet6.Image = ((System.Drawing.Image)(resources.GetObject("Pellet6.Image")));
             this.Pellet6.Location = new System.Drawing.Point(289, 200);
             this.Pellet6.Name = "Pellet6";
             this.Pellet6.Size = new System.Drawing.Size(10, 10);
             this.Pellet6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet6.TabIndex = 60;
             this.Pellet6.TabStop = false;
+            this.Pellet6.Tag = "pellet";
             // 
             // Pellet7
             // 
-            this.Pellet7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet7.Image = ((System.Drawing.Image)(resources.GetObject("Pellet7.Image")));
             this.Pellet7.Location = new System.Drawing.Point(348, 200);
             this.Pellet7.Name = "Pellet7";
             this.Pellet7.Size = new System.Drawing.Size(10, 10);
             this.Pellet7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet7.TabIndex = 61;
             this.Pellet7.TabStop = false;
+            this.Pellet7.Tag = "pellet";
             // 
             // Pellet8
             // 
-            this.Pellet8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet8.Image = ((System.Drawing.Image)(resources.GetObject("Pellet8.Image")));
             this.Pellet8.Location = new System.Drawing.Point(394, 200);
             this.Pellet8.Name = "Pellet8";
             this.Pellet8.Size = new System.Drawing.Size(10, 10);
             this.Pellet8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet8.TabIndex = 62;
             this.Pellet8.TabStop = false;
+            this.Pellet8.Tag = "pellet";
             // 
             // Pellet9
             // 
-            this.Pellet9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet9.Image = ((System.Drawing.Image)(resources.GetObject("Pellet9.Image")));
             this.Pellet9.Location = new System.Drawing.Point(436, 200);
             this.Pellet9.Name = "Pellet9";
             this.Pellet9.Size = new System.Drawing.Size(10, 10);
             this.Pellet9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet9.TabIndex = 63;
             this.Pellet9.TabStop = false;
+            this.Pellet9.Tag = "pellet";
             // 
             // Pellet10
             // 
-            this.Pellet10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet10.Image = ((System.Drawing.Image)(resources.GetObject("Pellet10.Image")));
             this.Pellet10.Location = new System.Drawing.Point(481, 200);
             this.Pellet10.Name = "Pellet10";
             this.Pellet10.Size = new System.Drawing.Size(10, 10);
             this.Pellet10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet10.TabIndex = 64;
             this.Pellet10.TabStop = false;
+            this.Pellet10.Tag = "pellet";
             // 
             // Pellet11
             // 
-            this.Pellet11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet11.Image = ((System.Drawing.Image)(resources.GetObject("Pellet11.Image")));
             this.Pellet11.Location = new System.Drawing.Point(526, 200);
             this.Pellet11.Name = "Pellet11";
             this.Pellet11.Size = new System.Drawing.Size(10, 10);
             this.Pellet11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet11.TabIndex = 65;
             this.Pellet11.TabStop = false;
+            this.Pellet11.Tag = "pellet";
             // 
             // Pellet13
             // 
-            this.Pellet13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet13.Image = ((System.Drawing.Image)(resources.GetObject("Pellet13.Image")));
             this.Pellet13.Location = new System.Drawing.Point(566, 200);
             this.Pellet13.Name = "Pellet13";
             this.Pellet13.Size = new System.Drawing.Size(10, 10);
             this.Pellet13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet13.TabIndex = 66;
             this.Pellet13.TabStop = false;
+            this.Pellet13.Tag = "pellet";
             // 
             // Pellet14
             // 
-            this.Pellet14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet14.Image = ((System.Drawing.Image)(resources.GetObject("Pellet14.Image")));
             this.Pellet14.Location = new System.Drawing.Point(566, 547);
             this.Pellet14.Name = "Pellet14";
             this.Pellet14.Size = new System.Drawing.Size(10, 10);
             this.Pellet14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet14.TabIndex = 78;
             this.Pellet14.TabStop = false;
+            this.Pellet14.Tag = "pellet";
             // 
             // Pellet15
             // 
-            this.Pellet15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet15.Image = ((System.Drawing.Image)(resources.GetObject("Pellet15.Image")));
             this.Pellet15.Location = new System.Drawing.Point(526, 547);
             this.Pellet15.Name = "Pellet15";
             this.Pellet15.Size = new System.Drawing.Size(10, 10);
             this.Pellet15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet15.TabIndex = 77;
             this.Pellet15.TabStop = false;
+            this.Pellet15.Tag = "pellet";
             // 
             // Pellet16
             // 
-            this.Pellet16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet16.Image = ((System.Drawing.Image)(resources.GetObject("Pellet16.Image")));
             this.Pellet16.Location = new System.Drawing.Point(481, 547);
             this.Pellet16.Name = "Pellet16";
             this.Pellet16.Size = new System.Drawing.Size(10, 10);
             this.Pellet16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet16.TabIndex = 76;
             this.Pellet16.TabStop = false;
+            this.Pellet16.Tag = "pellet";
             // 
             // Pellet17
             // 
-            this.Pellet17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet17.Image = ((System.Drawing.Image)(resources.GetObject("Pellet17.Image")));
             this.Pellet17.Location = new System.Drawing.Point(405, 547);
             this.Pellet17.Name = "Pellet17";
             this.Pellet17.Size = new System.Drawing.Size(10, 10);
             this.Pellet17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet17.TabIndex = 75;
             this.Pellet17.TabStop = false;
+            this.Pellet17.Tag = "pellet";
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox5.Image = global::Pacman.Properties.Resources.Pellet;
             this.pictureBox5.Location = new System.Drawing.Point(348, 492);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(10, 10);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 74;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "";
+            this.pictureBox5.Tag = "pellet";
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(348, 547);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(10, 10);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 73;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "pellet";
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(273, 547);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(10, 10);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 71;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "pellet";
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(228, 547);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(10, 10);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 70;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "pellet";
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(178, 547);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(10, 10);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 69;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "pellet";
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(124, 547);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(10, 10);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 68;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Tag = "pellet";
             // 
             // pictureBox12
             // 
-            this.pictureBox12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(63, 547);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(10, 10);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 67;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "pellet";
             // 
             // pictureBox13
             // 
-            this.pictureBox13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(289, 108);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(10, 10);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 84;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Tag = "pellet";
             // 
             // pictureBox14
             // 
-            this.pictureBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(238, 108);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(10, 10);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 83;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Tag = "pellet";
             // 
             // pictureBox15
             // 
-            this.pictureBox15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.Location = new System.Drawing.Point(183, 108);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(10, 10);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 82;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Tag = "pellet";
             // 
             // pictureBox16
             // 
-            this.pictureBox16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
             this.pictureBox16.Location = new System.Drawing.Point(141, 108);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(10, 10);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 81;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Tag = "pellet";
             // 
             // pictureBox17
             // 
-            this.pictureBox17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
             this.pictureBox17.Location = new System.Drawing.Point(100, 108);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(10, 10);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 80;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Tag = "pellet";
             // 
             // pictureBox18
             // 
-            this.pictureBox18.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox18.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
             this.pictureBox18.Location = new System.Drawing.Point(56, 108);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(10, 10);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 79;
             this.pictureBox18.TabStop = false;
+            this.pictureBox18.Tag = "pellet";
             this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
             // pictureBox19
             // 
-            this.pictureBox19.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox19.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
             this.pictureBox19.Location = new System.Drawing.Point(565, 108);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(10, 10);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 90;
             this.pictureBox19.TabStop = false;
+            this.pictureBox19.Tag = "pellet";
             // 
             // pictureBox20
             // 
-            this.pictureBox20.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox20.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
             this.pictureBox20.Location = new System.Drawing.Point(514, 108);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(10, 10);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 89;
             this.pictureBox20.TabStop = false;
+            this.pictureBox20.Tag = "pellet";
             // 
             // pictureBox21
             // 
-            this.pictureBox21.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox21.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
             this.pictureBox21.Location = new System.Drawing.Point(459, 108);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(10, 10);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 88;
             this.pictureBox21.TabStop = false;
+            this.pictureBox21.Tag = "pellet";
             // 
             // pictureBox22
             // 
-            this.pictureBox22.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox22.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
             this.pictureBox22.Location = new System.Drawing.Point(417, 108);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(10, 10);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 87;
             this.pictureBox22.TabStop = false;
+            this.pictureBox22.Tag = "pellet";
             // 
             // pictureBox23
             // 
-            this.pictureBox23.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox23.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
             this.pictureBox23.Location = new System.Drawing.Point(376, 108);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(10, 10);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 86;
             this.pictureBox23.TabStop = false;
+            this.pictureBox23.Tag = "pellet";
             // 
             // pictureBox24
             // 
-            this.pictureBox24.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox24.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
             this.pictureBox24.Location = new System.Drawing.Point(332, 108);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(10, 10);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox24.TabIndex = 85;
             this.pictureBox24.TabStop = false;
+            this.pictureBox24.Tag = "pellet";
             // 
             // pictureBox25
             // 
             this.pictureBox25.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
             this.pictureBox25.Location = new System.Drawing.Point(566, 661);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(10, 10);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 102;
             this.pictureBox25.TabStop = false;
+            this.pictureBox25.Tag = "pellet";
             // 
             // pictureBox26
             // 
             this.pictureBox26.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
             this.pictureBox26.Location = new System.Drawing.Point(526, 661);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(10, 10);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 101;
             this.pictureBox26.TabStop = false;
+            this.pictureBox26.Tag = "pellet";
             // 
             // pictureBox27
             // 
             this.pictureBox27.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
             this.pictureBox27.Location = new System.Drawing.Point(481, 661);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(10, 10);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox27.TabIndex = 100;
             this.pictureBox27.TabStop = false;
+            this.pictureBox27.Tag = "pellet";
             // 
             // pictureBox28
             // 
             this.pictureBox28.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
             this.pictureBox28.Location = new System.Drawing.Point(436, 661);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(10, 10);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox28.TabIndex = 99;
             this.pictureBox28.TabStop = false;
+            this.pictureBox28.Tag = "pellet";
             // 
             // pictureBox29
             // 
             this.pictureBox29.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
             this.pictureBox29.Location = new System.Drawing.Point(394, 661);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(10, 10);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 98;
             this.pictureBox29.TabStop = false;
+            this.pictureBox29.Tag = "pellet";
             // 
             // pictureBox30
             // 
             this.pictureBox30.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
             this.pictureBox30.Location = new System.Drawing.Point(348, 661);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(10, 10);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 97;
             this.pictureBox30.TabStop = false;
+            this.pictureBox30.Tag = "pellet";
             // 
             // pictureBox31
             // 
             this.pictureBox31.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
             this.pictureBox31.Location = new System.Drawing.Point(308, 661);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(10, 10);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox31.TabIndex = 96;
             this.pictureBox31.TabStop = false;
+            this.pictureBox31.Tag = "pellet";
             // 
             // pictureBox32
             // 
             this.pictureBox32.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
             this.pictureBox32.Location = new System.Drawing.Point(273, 661);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(10, 10);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox32.TabIndex = 95;
             this.pictureBox32.TabStop = false;
+            this.pictureBox32.Tag = "pellet";
             // 
             // pictureBox33
             // 
             this.pictureBox33.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
             this.pictureBox33.Location = new System.Drawing.Point(194, 661);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(10, 10);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 94;
             this.pictureBox33.TabStop = false;
+            this.pictureBox33.Tag = "pellet";
             // 
             // pictureBox34
             // 
             this.pictureBox34.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
             this.pictureBox34.Location = new System.Drawing.Point(153, 661);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(10, 10);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox34.TabIndex = 93;
             this.pictureBox34.TabStop = false;
+            this.pictureBox34.Tag = "pellet";
             // 
             // pictureBox35
             // 
             this.pictureBox35.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
             this.pictureBox35.Location = new System.Drawing.Point(108, 661);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(10, 10);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 92;
             this.pictureBox35.TabStop = false;
+            this.pictureBox35.Tag = "pellet";
             // 
             // pictureBox36
             // 
             this.pictureBox36.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox36.Image")));
             this.pictureBox36.Location = new System.Drawing.Point(63, 661);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(10, 10);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 91;
             this.pictureBox36.TabStop = false;
+            this.pictureBox36.Tag = "pellet";
             // 
             // pictureBox37
             // 
-            this.pictureBox37.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox37.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
             this.pictureBox37.Location = new System.Drawing.Point(558, 279);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(10, 10);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox37.TabIndex = 105;
             this.pictureBox37.TabStop = false;
+            this.pictureBox37.Tag = "pellet";
             // 
             // pictureBox38
             // 
-            this.pictureBox38.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox38.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
             this.pictureBox38.Location = new System.Drawing.Point(507, 279);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(10, 10);
             this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox38.TabIndex = 104;
             this.pictureBox38.TabStop = false;
+            this.pictureBox38.Tag = "pellet";
             // 
             // pictureBox39
             // 
-            this.pictureBox39.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox39.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
             this.pictureBox39.Location = new System.Drawing.Point(452, 279);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(10, 10);
             this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox39.TabIndex = 103;
             this.pictureBox39.TabStop = false;
+            this.pictureBox39.Tag = "pellet";
             // 
             // pictureBox40
             // 
-            this.pictureBox40.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox40.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox40.Image = global::Pacman.Properties.Resources.Pellet;
             this.pictureBox40.Location = new System.Drawing.Point(166, 279);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(10, 10);
             this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox40.TabIndex = 108;
             this.pictureBox40.TabStop = false;
+            this.pictureBox40.Tag = "pellet";
             // 
             // pictureBox41
             // 
-            this.pictureBox41.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox41.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
             this.pictureBox41.Location = new System.Drawing.Point(115, 279);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(10, 10);
             this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox41.TabIndex = 107;
             this.pictureBox41.TabStop = false;
+            this.pictureBox41.Tag = "pellet";
             // 
             // pictureBox42
             // 
-            this.pictureBox42.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox42.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
             this.pictureBox42.Location = new System.Drawing.Point(60, 279);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(10, 10);
             this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox42.TabIndex = 106;
             this.pictureBox42.TabStop = false;
+            this.pictureBox42.Tag = "pellet";
             // 
             // pictureBox43
             // 
-            this.pictureBox43.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox43.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
             this.pictureBox43.Location = new System.Drawing.Point(156, 601);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(10, 10);
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox43.TabIndex = 111;
             this.pictureBox43.TabStop = false;
+            this.pictureBox43.Tag = "pellet";
             // 
             // pictureBox44
             // 
-            this.pictureBox44.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox44.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
             this.pictureBox44.Location = new System.Drawing.Point(111, 601);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(10, 10);
             this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox44.TabIndex = 110;
             this.pictureBox44.TabStop = false;
+            this.pictureBox44.Tag = "pellet";
             // 
             // pictureBox46
             // 
-            this.pictureBox46.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox46.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
             this.pictureBox46.Location = new System.Drawing.Point(565, 601);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(10, 10);
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox46.TabIndex = 114;
             this.pictureBox46.TabStop = false;
+            this.pictureBox46.Tag = "pellet";
             // 
             // pictureBox47
             // 
-            this.pictureBox47.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox47.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox47.Image")));
             this.pictureBox47.Location = new System.Drawing.Point(514, 601);
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.Size = new System.Drawing.Size(10, 10);
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox47.TabIndex = 113;
             this.pictureBox47.TabStop = false;
+            this.pictureBox47.Tag = "pellet";
             // 
             // pictureBox48
             // 
-            this.pictureBox48.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox48.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
             this.pictureBox48.Location = new System.Drawing.Point(469, 601);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(10, 10);
             this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox48.TabIndex = 112;
             this.pictureBox48.TabStop = false;
+            this.pictureBox48.Tag = "pellet";
             // 
             // pictureBox50
             // 
-            this.pictureBox50.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox50.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
             this.pictureBox50.Location = new System.Drawing.Point(405, 603);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(10, 10);
             this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox50.TabIndex = 116;
             this.pictureBox50.TabStop = false;
+            this.pictureBox50.Tag = "pellet";
             // 
             // pictureBox51
             // 
-            this.pictureBox51.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox51.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
             this.pictureBox51.Location = new System.Drawing.Point(348, 603);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(10, 10);
             this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox51.TabIndex = 115;
             this.pictureBox51.TabStop = false;
+            this.pictureBox51.Tag = "pellet";
             // 
             // pictureBox49
             // 
-            this.pictureBox49.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox49.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox49.Image")));
             this.pictureBox49.Location = new System.Drawing.Point(273, 603);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(10, 10);
             this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox49.TabIndex = 118;
             this.pictureBox49.TabStop = false;
+            this.pictureBox49.Tag = "pellet";
             // 
             // pictureBox52
             // 
-            this.pictureBox52.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox52.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox52.Image")));
             this.pictureBox52.Location = new System.Drawing.Point(216, 603);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(10, 10);
             this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox52.TabIndex = 117;
             this.pictureBox52.TabStop = false;
+            this.pictureBox52.Tag = "pellet";
             // 
             // pictureBox53
             // 
-            this.pictureBox53.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox53.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
             this.pictureBox53.Location = new System.Drawing.Point(63, 601);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(10, 10);
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox53.TabIndex = 119;
             this.pictureBox53.TabStop = false;
+            this.pictureBox53.Tag = "pellet";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(289, 269);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(10, 10);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 121;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "pellet";
             // 
             // pictureBox45
             // 
-            this.pictureBox45.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox45.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox45.Image")));
             this.pictureBox45.Location = new System.Drawing.Point(232, 269);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(10, 10);
             this.pictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox45.TabIndex = 120;
             this.pictureBox45.TabStop = false;
+            this.pictureBox45.Tag = "pellet";
             // 
             // pictureBox54
             // 
-            this.pictureBox54.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox54.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
             this.pictureBox54.Location = new System.Drawing.Point(405, 269);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(10, 10);
             this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox54.TabIndex = 123;
             this.pictureBox54.TabStop = false;
+            this.pictureBox54.Tag = "pellet";
             // 
             // Pellet55
             // 
-            this.Pellet55.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Pellet55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pellet55.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pellet55.Image = ((System.Drawing.Image)(resources.GetObject("Pellet55.Image")));
             this.Pellet55.Location = new System.Drawing.Point(348, 269);
             this.Pellet55.Name = "Pellet55";
             this.Pellet55.Size = new System.Drawing.Size(10, 10);
             this.Pellet55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pellet55.TabIndex = 122;
             this.Pellet55.TabStop = false;
+            this.Pellet55.Tag = "pellet";
             // 
             // pacman
             // 
@@ -1569,6 +1636,7 @@ namespace Pacman
             this.pacman.Size = new System.Drawing.Size(25, 25);
             this.pacman.TabIndex = 124;
             this.pacman.TabStop = false;
+            this.pacman.Tag = "";
             // 
             // gametimer
             // 
@@ -1582,9 +1650,9 @@ namespace Pacman
             this.LivesText.Location = new System.Drawing.Point(39, 28);
             this.LivesText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LivesText.Name = "LivesText";
-            this.LivesText.Size = new System.Drawing.Size(85, 36);
+            this.LivesText.Size = new System.Drawing.Size(93, 36);
             this.LivesText.TabIndex = 125;
-            this.LivesText.Text = "Lives";
+            this.LivesText.Text = "Lives:";
             // 
             // ScoreText
             // 
@@ -1594,9 +1662,9 @@ namespace Pacman
             this.ScoreText.Location = new System.Drawing.Point(302, 28);
             this.ScoreText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ScoreText.Name = "ScoreText";
-            this.ScoreText.Size = new System.Drawing.Size(93, 36);
+            this.ScoreText.Size = new System.Drawing.Size(101, 36);
             this.ScoreText.TabIndex = 126;
-            this.ScoreText.Text = "Score";
+            this.ScoreText.Text = "Score:";
             // 
             // LivesCounter
             // 
@@ -1750,7 +1818,7 @@ namespace Pacman
             this.Controls.Add(this.wall4);
             this.Controls.Add(this.wall5);
             this.Controls.Add(this.wall0);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GameScreen";
             this.Text = "PacMan";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);

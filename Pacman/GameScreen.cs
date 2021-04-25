@@ -16,13 +16,12 @@ namespace Pacman
         bool godown;
         bool goleft;
         bool goright;
-        bool theGameIsOver;
-
+        
         int speed;
 
-        int redGhostSpeed = 8;
-        int orangeGhostSpeed = 8;
-        int cyanGhostSpeed = 8;
+        int redGhostSpeed;
+        int orangeGhostSpeed;
+        int cyanGhostSpeed;
 
         int score = 0;
         int lives = 3;
@@ -48,25 +47,54 @@ namespace Pacman
         //Used to move pacman when a key is pressed down
         private void keyisdown(object sender, KeyEventArgs e)
         {
-            LivesCounter.Text = "" + lives;
-            ScoreCounter.Text = "" + score;
 
+                if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
+                {
+                    goleft = true;
+                }
+                if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
+                {
+                    goright = true;
+                }
+                if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
+                {
+                    goup = true;
+                }
+                if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
+                {
+                    godown = true;
+                }
+        }
+
+        //Used to stop pacman when a key is let up
+        private void keyisup(object sender, KeyEventArgs e)
+        {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
-                goleft = true;
+                goleft = false;
             }
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
-                goright = true;
+                goright = false;
             }
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
             {
-                goup = true;
+                goup = false;
             }
             if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
             {
-                godown = true;
+                godown = false;
             }
+            
+        }
+
+
+        //game timer
+        private void gametimer_Tick(object sender, EventArgs e)
+        {
+            //scores and lives
+            LivesCounter.Text = "" + lives;
+            ScoreCounter.Text = "" + score;
 
             //Player movements
             if (goleft)
@@ -120,72 +148,36 @@ namespace Pacman
                             resetGame();
                         }
                     }
-                }
-                //winning and losing conditions
-                if (score == 1060)
-                {
-                    youWin();
-                }
-                if (lives < 0)
-                {
-                    gameOver();
-                }
-            }
-        }
-
-        //Used to stop pacman when a key is let up
-        private void keyisup(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
-            {
-                goleft = false;
-            }
-            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
-            {
-                goright = false;
-            }
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
-            {
-                goup = false;
-            }
-            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
-            {
-                godown = false;
-            }
-            
-        }
-
-
-        //game timer
-        private void gametimer_Tick(object sender, EventArgs e)
-        {
-
-
-            //adding wall functionality
-            foreach (Control x in this.Controls)
-            {
-                if (x is PictureBox && x.Tag == "wall")
-                {
-                    if (((PictureBox)x).Bounds.IntersectsWith(pacman.Bounds))
+                    if ((string)x.Tag == "wall")
+                    {
+                        if (((PictureBox)x).Bounds.IntersectsWith(pacman.Bounds))
                         {
-                        goleft = false;
-                        goright = false;
-                        goup = false;
-                        godown = false;
+                            goleft = false;
+                            goright = false;
+                            goup = false;
+                            godown = false;
+                        }
                     }
                 }
             }
+
+            //winning and losing conditions
+            if (score == 1060)
+            {
+                youWin();
+            }
+            if (lives < 0)
+            {
+                gameOver();
+            }
         }
 
-        //A method to reset the game is important to repostion the user and ghosts after having contact the ghost
+        //A method to reset the game is used to repostion the user and ghosts after having contact the ghost
         private void resetGame()
         {
             ScoreCounter.Text = "" + score;
       
-            speed = 5;
-
-            theGameIsOver = false;
-
+            speed = 10;
 
             pacman.Left = 107;
             pacman.Top = 408;
@@ -199,22 +191,19 @@ namespace Pacman
             orangeGhost.Left = 334;
             orangeGhost.Top = 375;
 
+            //starts game
             gametimer.Start();
 
         }
 
-        //A method to completely reset that game is used once the user has used all of their lives to reset the score and reposition all characters
+        //A method to completely reset that game is used (once the user has used all of their lives) to reset the score, reset lives, make the pellets appear again, and reposition all characters
         private void totalResetGame()
         {
             ScoreCounter.Text = "0" + score;
 
             score = 0;
             lives = 3;
-
-            speed = 5;
-
-            theGameIsOver = false;
-
+            speed = 10;
 
             pacman.Left = 107;
             pacman.Top = 408;
@@ -228,6 +217,7 @@ namespace Pacman
             orangeGhost.Left = 334;
             orangeGhost.Top = 375;
 
+            //makes the pellets visible again
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox)
@@ -236,15 +226,14 @@ namespace Pacman
                 }
             }
 
+            //starts game
             gametimer.Start();
-
 
         }
 
         //method for the losing condition
         private void gameOver()
         {
-            theGameIsOver = true;
             gametimer.Stop();
             var theSelectedOption = MessageBox.Show("The Ghosts got you, You Lose!\n\nWould you like to try again?", "Game Over", MessageBoxButtons.YesNo);
             if(theSelectedOption == DialogResult.Yes)
@@ -253,14 +242,13 @@ namespace Pacman
             }
             if(theSelectedOption == DialogResult.No)
             {
-
+                this.Close();
             }
         }
 
         //method for the winning condition
         private void youWin()
         {
-            theGameIsOver = true;
             gametimer.Stop();
             var selectedOption = MessageBox.Show("Congratulations! You have collected all the pellets.\n\nWould you like to try again?", "You Win!", MessageBoxButtons.YesNo);
             if(selectedOption == DialogResult.Yes)
@@ -269,7 +257,7 @@ namespace Pacman
             }
             if(selectedOption == DialogResult.No)
             {
-
+                this.Close();
             }
            
         }

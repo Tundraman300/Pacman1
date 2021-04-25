@@ -25,6 +25,7 @@ namespace Pacman
         int cyanGhostSpeed = 8;
 
         int score = 0;
+        int lives = 3;
 
         public GameScreen()
         {
@@ -47,7 +48,7 @@ namespace Pacman
         //Used to move pacman when a key is pressed down
         private void keyisdown(object sender, KeyEventArgs e)
         {
-
+            LivesCounter.Text = "" + lives;
             ScoreCounter.Text = "" + score;
 
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
@@ -85,10 +86,12 @@ namespace Pacman
                 pacman.Top -= speed;
             }
 
+            //for loop to check the picture boxes
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox)
                 {
+                    //checks for string data and each if statement has their own conditions
                     if ((string)x.Tag == "pellet" && x.Visible == true)
                     {
                         if (pacman.Bounds.IntersectsWith(x.Bounds))
@@ -113,16 +116,21 @@ namespace Pacman
                         if (pacman.Bounds.IntersectsWith(x.Bounds))
                         {
 
-                            gameOver();
+                            lives = lives - 1;
+                            resetGame();
                         }
                     }
                 }
+                //winning and losing conditions
+                if (score == 1060)
+                {
+                    youWin();
+                }
+                if (lives < 0)
+                {
+                    gameOver();
+                }
             }
-            if (score == 1080)
-            {
-                youWin();
-            }
-
         }
 
         //Used to stop pacman when a key is let up
@@ -144,6 +152,7 @@ namespace Pacman
             {
                 godown = false;
             }
+            
         }
 
 
@@ -168,11 +177,39 @@ namespace Pacman
             }
         }
 
+        //A method to reset the game is important to repostion the user and ghosts after having contact the ghost
         private void resetGame()
+        {
+            ScoreCounter.Text = "" + score;
+      
+            speed = 5;
+
+            theGameIsOver = false;
+
+
+            pacman.Left = 107;
+            pacman.Top = 408;
+
+            redGhost.Left = 261;
+            redGhost.Top = 375;
+
+            cyanGhost.Left = 298;
+            cyanGhost.Top = 375;
+
+            orangeGhost.Left = 334;
+            orangeGhost.Top = 375;
+
+            gametimer.Start();
+
+        }
+
+        //A method to completely reset that game is used once the user has used all of their lives to reset the score and reposition all characters
+        private void totalResetGame()
         {
             ScoreCounter.Text = "0" + score;
 
             score = 0;
+            lives = 3;
 
             speed = 5;
 
@@ -191,9 +228,9 @@ namespace Pacman
             orangeGhost.Left = 334;
             orangeGhost.Top = 375;
 
-            foreach(Control x in this.Controls)
+            foreach (Control x in this.Controls)
             {
-                if(x is PictureBox)
+                if (x is PictureBox)
                 {
                     x.Visible = true;
                 }
@@ -201,20 +238,39 @@ namespace Pacman
 
             gametimer.Start();
 
+
         }
 
+        //method for the losing condition
         private void gameOver()
         {
             theGameIsOver = true;
             gametimer.Stop();
-            MessageBox.Show("The Ghosts got you, You Lose!", "Game Over");
+            var theSelectedOption = MessageBox.Show("The Ghosts got you, You Lose!\n\nWould you like to try again?", "Game Over", MessageBoxButtons.YesNo);
+            if(theSelectedOption == DialogResult.Yes)
+            {
+                totalResetGame();
+            }
+            if(theSelectedOption == DialogResult.No)
+            {
+
+            }
         }
 
+        //method for the winning condition
         private void youWin()
         {
             theGameIsOver = true;
             gametimer.Stop();
-            MessageBox.Show("Congratulations! You have collected all the pellets.", "You Win!");
+            var selectedOption = MessageBox.Show("Congratulations! You have collected all the pellets.\n\nWould you like to try again?", "You Win!", MessageBoxButtons.YesNo);
+            if(selectedOption == DialogResult.Yes)
+            {
+                totalResetGame();
+            }
+            if(selectedOption == DialogResult.No)
+            {
+
+            }
            
         }
     }

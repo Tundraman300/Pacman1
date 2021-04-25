@@ -16,6 +16,10 @@ namespace Pacman
         bool godown;
         bool goleft;
         bool goright;
+        bool cangoup;
+        bool cangodown;
+        bool cangoleft;
+        bool cangoright;
         
         int speed;
 
@@ -48,19 +52,40 @@ namespace Pacman
 
                 if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
                 {
-                    goleft = true;
+                pacman.Image = Pacman.Properties.Resources.pacmanLeft;
+                goright = goup = godown = false;
+                    if(cangoleft == true)
+                    {
+                        goleft = true;
+                }
+                    
                 }
                 if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
                 {
-                    goright = true;
+                pacman.Image = Pacman.Properties.Resources.pacman;
+                goleft = goup = godown = false;
+                    if (cangoright)
+                    {
+                        goright = true;
+                    }
                 }
                 if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
                 {
-                    goup = true;
+                pacman.Image = Pacman.Properties.Resources.pacmanUp;
+                goright = goleft = godown = false;
+                    if (cangoup)
+                    {
+                        goup = true;
+                    }
                 }
                 if (e.KeyCode == Keys.Down || e.KeyCode == Keys.S)
                 {
-                    godown = true;
+                pacman.Image = Pacman.Properties.Resources.pacmanDown;
+                goright = goleft = goup = false;
+                    if (cangodown)
+                    {
+                        godown = true;
+                    }
                 }
         }
 
@@ -146,14 +171,38 @@ namespace Pacman
                             resetGame();
                         }
                     }
+                    //Code to get walls to work
                     if ((string)x.Tag == "wall")
                     {
-                        if (((PictureBox)x).Bounds.IntersectsWith(pacman.Bounds))
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
                         {
-                            goleft = false;
-                            goright = false;
-                            goup = false;
-                            godown = false;
+                            if (goleft)
+                            {
+                                goleft = false;
+                                cangoleft = false;
+                            }
+                            else if (goright)
+                            {
+                                goright = false;
+                                cangoright = false;
+                            }
+                            else if (goup)
+                            {
+                                goup = false;
+                                cangoup = false;
+                            }
+                            else if (godown)
+                            {
+                                godown = false;
+                                cangodown = false;
+                            }
+                            else
+                            {
+                                cangoup = true;
+                                cangoright = true;
+                                cangodown = true;
+                                cangoleft = true;
+                            }
                         }
                     }
                 }
@@ -241,8 +290,13 @@ namespace Pacman
       
             speed = 10;
 
-            pacman.Left = 107;
-            pacman.Top = 408;
+            pacman.Left = 301;
+            pacman.Top = 535;
+
+            cangoup = true;
+            cangodown = true;
+            cangoright = true;
+            cangoleft = true;
 
             redGhost.Left = 261;
             redGhost.Top = 375;
@@ -267,8 +321,13 @@ namespace Pacman
             lives = 3;
             speed = 10;
 
-            pacman.Left = 107;
-            pacman.Top = 408;
+            pacman.Left = 301;
+            pacman.Top = 535;
+
+            cangoup = true;
+            cangodown = true;
+            cangoright = true;
+            cangoleft = true;
 
             redGhost.Left = 261;
             redGhost.Top = 375;

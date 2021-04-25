@@ -19,9 +19,7 @@ namespace Pacman
         
         int speed;
 
-        int redGhostSpeed;
-        int orangeGhostSpeed;
-        int cyanGhostSpeed;
+        int ghostSpeed = 6;
 
         int score = 0;
         int lives = 3;
@@ -170,6 +168,70 @@ namespace Pacman
             {
                 gameOver();
             }
+
+            // Move ghosts.
+            moveGhost(redGhost);
+            moveGhost(orangeGhost);
+            moveGhost(cyanGhost);
+        }
+
+        // Method for moving a ghost towards pacman.
+        private void moveGhost (PictureBox ghost) {
+            string ghostDirection = findGhostMove(ghost.Location);
+
+            // Move the ghost according to found direction.
+            if (ghostDirection == "left")
+            {
+                ghost.Left -= ghostSpeed;
+            }
+            if (ghostDirection == "right")
+            {
+                ghost.Left += ghostSpeed;
+            }
+            if (ghostDirection == "down")
+            {
+                ghost.Top -= ghostSpeed;
+            }
+            if (ghostDirection == "up")
+            {
+                ghost.Top += ghostSpeed;
+            }
+        }
+
+            // Method for finding the direction to move a ghost.
+            private string findGhostMove(Point ghostLocation) {
+            string direction;
+            double xDiff = pacman.Location.X - ghostLocation.X;
+            double yDiff = pacman.Location.Y - ghostLocation.Y;
+
+            if (Math.Abs(xDiff) >= Math.Abs(yDiff))
+            {
+                // Distance to pacman is farther in the x direction than the y direction.
+                if (xDiff >= 0)
+                {
+                    // Pacman is to the right.
+                    direction = "right";
+                }
+                else
+                {
+                    // Pacman is to the left.
+                    direction = "left";
+                }
+            }
+            else {
+                if (yDiff >= 0)
+                {
+                    // Pacman is above.
+                    direction = "up";
+                }
+                else
+                {
+                    // Pacman is below.
+                    direction = "down";
+                }
+            }
+
+            return direction;
         }
 
         //A method to reset the game is used to repostion the user and ghosts after having contact the ghost

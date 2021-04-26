@@ -247,9 +247,9 @@ namespace Pacman
             }
 
             // Move ghosts.
-            //moveGhost(redGhost);
-            //moveGhost(orangeGhost);
-            //moveGhost(cyanGhost);
+            moveGhost(redGhost);
+            moveGhost(orangeGhost);
+            moveGhost(cyanGhost);
         }
 
         // Method for moving a ghost towards pacman.

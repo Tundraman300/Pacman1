@@ -143,5 +143,9 @@
   <ItemGroup>
     <None Include="Resources\pacmanDown.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\vulnerableGhost.gif" />
+    <None Include="Resources\vulnerableGhost1.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

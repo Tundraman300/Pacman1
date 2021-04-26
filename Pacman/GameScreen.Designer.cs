@@ -36,6 +36,7 @@ namespace Pacman
             this.ScoreText = new System.Windows.Forms.Label();
             this.LivesCounter = new System.Windows.Forms.Label();
             this.ScoreCounter = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
@@ -377,6 +378,11 @@ namespace Pacman
             this.ScoreCounter.Size = new System.Drawing.Size(32, 36);
             this.ScoreCounter.TabIndex = 128;
             this.ScoreCounter.Text = "0";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox36
             // 
@@ -2508,5 +2514,6 @@ namespace Pacman
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox36;
+        private System.Windows.Forms.Timer timer1;
     }
 }

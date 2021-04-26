@@ -27,6 +27,7 @@ namespace Pacman
 
         int score = 0;
         int lives = 3;
+        int timeLeft = 8;
 
         public GameScreen()
         {
@@ -125,6 +126,10 @@ namespace Pacman
         //game timer
         private void gametimer_Tick(object sender, EventArgs e)
         {
+            //redGhost.Image = Pacman.Properties.Resources.redGhost3;
+            //orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
+            //cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+
             //scores and lives
             LivesCounter.Text = "" + lives;
             ScoreCounter.Text = "" + score;
@@ -189,6 +194,9 @@ namespace Pacman
                         {
                             score = score + 50;
                             x.Visible = false;
+                            timeLeft = 8;
+
+                            timer1.Start();
 
                         }
                     }
@@ -319,6 +327,12 @@ namespace Pacman
         //A method to reset the game is used to repostion the user and ghosts after having contact the ghost
         private void resetGame()
         {
+            timer1.Stop();
+
+            redGhost.Image = Pacman.Properties.Resources.redGhost3;
+            orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
+            cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+
             ScoreCounter.Text = "" + score;
       
             speed = 10;
@@ -347,7 +361,12 @@ namespace Pacman
 
         //A method to completely reset that game is used (once the user has used all of their lives) to reset the score, reset lives, make the pellets appear again, and reposition all characters
         private void totalResetGame()
-        {
+        { 
+
+            //redGhost.Image = Pacman.Properties.Resources.redGhost3;
+            //orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
+            //cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+
             ScoreCounter.Text = "0" + score;
 
             score = 0;
@@ -415,43 +434,26 @@ namespace Pacman
             }
            
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+          
+            redGhost.Image = Pacman.Properties.Resources.vulnerableGhost;
+            orangeGhost.Image = Pacman.Properties.Resources.vulnerableGhost;
+            cyanGhost.Image = Pacman.Properties.Resources.vulnerableGhost;
+
+            if(timeLeft > 0)
+            {
+                
+                timeLeft = timeLeft - 1;
+                
+            }
+            else
+            {
+                redGhost.Image = Pacman.Properties.Resources.redGhost3;
+                orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
+                cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+            }
+        }
     }
 }
-/*
-if (redGhost.Bounds.IntersectsWith(x.Bounds) && )
-{
-
-}
-if (redGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-if (redGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-if (redGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-if (orangeGhost.Bounds.IntersectsWith(x.Bounds))
-{
-
-}
-*/

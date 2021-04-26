@@ -57,6 +57,11 @@ namespace Pacman
                     if(cangoleft == true)
                     {
                         goleft = true;
+                    //Portal to the other side
+                    if (pacman.Left <= 36)
+                    {
+                        pacman.Left = 582;
+                    }
                 }
                     
                 }
@@ -67,7 +72,12 @@ namespace Pacman
                     if (cangoright)
                     {
                         goright = true;
+                    //Portal to the other side
+                    if (pacman.Left >= 582)
+                    {
+                        pacman.Left = 36;
                     }
+                }
                 }
                 if (e.KeyCode == Keys.Up || e.KeyCode == Keys.W)
                 {
@@ -123,18 +133,34 @@ namespace Pacman
             if (goleft)
             {
                 pacman.Left -= speed;
+                cangoup = true;
+                cangoright = true;
+                cangodown = true;
+                cangoleft = true;
             }
             if (goright)
             {
                 pacman.Left += speed;
+                cangoup = true;
+                cangoright = true;
+                cangodown = true;
+                cangoleft = true;
             }
             if (godown)
             {
                 pacman.Top += speed;
+                cangoup = true;
+                cangoright = true;
+                cangodown = true;
+                cangoleft = true;
             }
             if (goup)
             {
                 pacman.Top -= speed;
+                cangoup = true;
+                cangoright = true;
+                cangodown = true;
+                cangoleft = true;
             }
 
             //for loop to check the picture boxes
@@ -171,39 +197,41 @@ namespace Pacman
                             resetGame();
                         }
                     }
-                    //Code to get walls to work
+                    //Checks if there is a wall and stopps Pacman
                     if ((string)x.Tag == "wall")
                     {
-                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        if (goleft == true && pacman.Bounds.IntersectsWith(x.Bounds))
                         {
-                            if (goleft)
-                            {
-                                goleft = false;
-                                cangoleft = false;
-                            }
-                            else if (goright)
-                            {
-                                goright = false;
-                                cangoright = false;
-                            }
-                            else if (goup)
-                            {
-                                goup = false;
-                                cangoup = false;
-                            }
-                            else if (godown)
-                            {
-                                godown = false;
-                                cangodown = false;
-                            }
-                            else
-                            {
-                                cangoup = true;
-                                cangoright = true;
-                                cangodown = true;
-                                cangoleft = true;
-                            }
+                            goleft = false;
+                            cangoleft = false;
+
+                           
                         }
+
+                        if (goright == true && pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            goright = false;
+                            cangoright = false;
+
+
+                        }
+
+                        if (goup == true && pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            goup = false;
+                            cangoup = false;
+
+
+                        }
+
+                        if (godown == true && pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            godown = false;
+                            cangodown = false;
+
+
+                        }
+                       
                     }
                 }
             }
@@ -219,9 +247,9 @@ namespace Pacman
             }
 
             // Move ghosts.
-            moveGhost(redGhost);
-            moveGhost(orangeGhost);
-            moveGhost(cyanGhost);
+            //moveGhost(redGhost);
+            //moveGhost(orangeGhost);
+            //moveGhost(cyanGhost);
         }
 
         // Method for moving a ghost towards pacman.

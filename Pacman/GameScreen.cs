@@ -23,7 +23,7 @@ namespace Pacman
         
         int speed;
 
-        int ghostSpeed = 6;
+        int ghostSpeed = 4;
 
         int score = 0;
         int lives = 3;
@@ -336,6 +336,8 @@ namespace Pacman
             ScoreCounter.Text = "" + score;
       
             speed = 10;
+            ghostSpeed = 4;
+
 
             pacman.Left = 301;
             pacman.Top = 535;
@@ -372,6 +374,7 @@ namespace Pacman
             score = 0;
             lives = 3;
             speed = 10;
+            ghostSpeed = 4;
 
             pacman.Left = 301;
             pacman.Top = 535;

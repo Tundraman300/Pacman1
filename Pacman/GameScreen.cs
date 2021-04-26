@@ -163,6 +163,11 @@ namespace Pacman
                 cangoleft = true;
             }
 
+            //Moves ghosts.
+            moveGhost(redGhost);
+            moveGhost(orangeGhost);
+            moveGhost(cyanGhost);
+
             //for loop to check the picture boxes
             foreach (Control x in this.Controls)
             {
@@ -197,7 +202,7 @@ namespace Pacman
                             resetGame();
                         }
                     }
-                    //Checks if there is a wall and stopps Pacman
+                    //Checks if there is a wall and stops Pacman
                     if ((string)x.Tag == "wall")
                     {
                         if (goleft == true && pacman.Bounds.IntersectsWith(x.Bounds))
@@ -229,9 +234,7 @@ namespace Pacman
                             godown = false;
                             cangodown = false;
 
-
                         }
-                       
                     }
                 }
             }
@@ -245,41 +248,43 @@ namespace Pacman
             {
                 gameOver();
             }
-
-            // Move ghosts.
-            moveGhost(redGhost);
-            moveGhost(orangeGhost);
-            moveGhost(cyanGhost);
         }
 
         // Method for moving a ghost towards pacman.
         private void moveGhost (PictureBox ghost) {
+
             string ghostDirection = findGhostMove(ghost.Location);
 
             // Move the ghost according to found direction.
-            if (ghostDirection == "left")
-            {
-                ghost.Left -= ghostSpeed;
-            }
-            if (ghostDirection == "right")
-            {
-                ghost.Left += ghostSpeed;
-            }
-            if (ghostDirection == "down")
-            {
-                ghost.Top -= ghostSpeed;
-            }
-            if (ghostDirection == "up")
-            {
-                ghost.Top += ghostSpeed;
-            }
+                        if (ghostDirection == "left")
+                        {
+                            ghost.Left -= ghostSpeed;
+
+
+                        }
+                        if (ghostDirection == "right")
+                        {
+                            ghost.Left += ghostSpeed;
+
+                        }
+                        if (ghostDirection == "down")
+                        {
+                            ghost.Top -= ghostSpeed;
+
+
+                        }
+                        if (ghostDirection == "up")
+                        {
+                            ghost.Top += ghostSpeed;
+
+                        }
         }
 
             // Method for finding the direction to move a ghost.
             private string findGhostMove(Point ghostLocation) {
-            string direction;
-            double xDiff = pacman.Location.X - ghostLocation.X;
-            double yDiff = pacman.Location.Y - ghostLocation.Y;
+                string direction;
+                double xDiff = pacman.Location.X - ghostLocation.X;
+                double yDiff = pacman.Location.Y - ghostLocation.Y;
 
             if (Math.Abs(xDiff) >= Math.Abs(yDiff))
             {
@@ -412,3 +417,41 @@ namespace Pacman
         }
     }
 }
+/*
+if (redGhost.Bounds.IntersectsWith(x.Bounds) && )
+{
+
+}
+if (redGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+if (redGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+if (redGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+if (cyanGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+if (orangeGhost.Bounds.IntersectsWith(x.Bounds))
+{
+
+}
+*/

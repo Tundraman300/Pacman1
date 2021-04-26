@@ -484,7 +484,7 @@ namespace Pacman
             // 
             this.pictureBox72.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox72.Image = global::Pacman.Properties.Resources.Pellet;
-            this.pictureBox72.Location = new System.Drawing.Point(273, 150);
+            this.pictureBox72.Location = new System.Drawing.Point(280, 150);
             this.pictureBox72.Name = "pictureBox72";
             this.pictureBox72.Size = new System.Drawing.Size(10, 10);
             this.pictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1179,7 +1179,7 @@ namespace Pacman
             // 
             this.pictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(289, 108);
+            this.pictureBox13.Location = new System.Drawing.Point(280, 108);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(10, 10);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1203,7 +1203,7 @@ namespace Pacman
             // 
             this.pictureBox15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(183, 108);
+            this.pictureBox15.Location = new System.Drawing.Point(202, 108);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(10, 10);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1215,7 +1215,7 @@ namespace Pacman
             // 
             this.pictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(141, 108);
+            this.pictureBox16.Location = new System.Drawing.Point(156, 108);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(10, 10);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1227,7 +1227,7 @@ namespace Pacman
             // 
             this.pictureBox17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(100, 108);
+            this.pictureBox17.Location = new System.Drawing.Point(108, 108);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(10, 10);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1444,7 +1444,7 @@ namespace Pacman
             // 
             this.Pellet6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Pellet6.Image = ((System.Drawing.Image)(resources.GetObject("Pellet6.Image")));
-            this.Pellet6.Location = new System.Drawing.Point(289, 200);
+            this.Pellet6.Location = new System.Drawing.Point(280, 200);
             this.Pellet6.Name = "Pellet6";
             this.Pellet6.Size = new System.Drawing.Size(10, 10);
             this.Pellet6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

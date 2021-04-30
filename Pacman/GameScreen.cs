@@ -449,6 +449,7 @@ namespace Pacman
             {
                 
                 timeLeft = timeLeft - 1;
+                pacmanEats();
                 
             }
             else
@@ -456,6 +457,46 @@ namespace Pacman
                 redGhost.Image = Pacman.Properties.Resources.redGhost3;
                 orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
                 cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+            }
+        }
+
+        private void pacmanEats()
+        {
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox)
+                {
+                    if((string)x.Tag == "ghost" && x.Name == "redGhost")
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            redGhost.Left = 261;
+                            redGhost.Top = 375;
+
+                            redGhost.Image = Pacman.Properties.Resources.redGhost3;
+                        }
+                    }
+                    if ((string)x.Tag == "ghost" && x.Name == "cyanGhost")
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            cyanGhost.Left = 298;
+                            cyanGhost.Top = 375;
+
+                            cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+                        }
+                    }
+                    if ((string)x.Tag == "ghost" && x.Name == "orangeGhost")
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            orangeGhost.Left = 334;
+                            orangeGhost.Top = 375;
+
+                            orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
+                        }
+                    }
+                }
             }
         }
     }

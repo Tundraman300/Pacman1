@@ -20,7 +20,10 @@ namespace Pacman
         bool cangodown;
         bool cangoleft;
         bool cangoright;
-        
+        bool vulnerableRed;
+        bool vulnerableCyan;
+        bool vulnerableOrange;
+
         int speed;
 
         int ghostSpeed = 4;
@@ -134,6 +137,7 @@ namespace Pacman
             LivesCounter.Text = "" + lives;
             ScoreCounter.Text = "" + score;
 
+
             //Player movements
             if (goleft)
             {
@@ -201,7 +205,25 @@ namespace Pacman
                         }
                     }
 
-                    if ((string)x.Tag == "ghost")
+                    if ((string)x.Tag == "ghost" && vulnerableRed == false)
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+              
+                            lives = lives - 1;
+                            resetGame();
+                        }
+                    }
+                    if ((string)x.Tag == "ghost" && vulnerableCyan == false)
+                    {
+                        if (pacman.Bounds.IntersectsWith(x.Bounds))
+                        {
+
+                            lives = lives - 1;
+                            resetGame();
+                        }
+                    }
+                    if ((string)x.Tag == "ghost" && vulnerableOrange == false)
                     {
                         if (pacman.Bounds.IntersectsWith(x.Bounds))
                         {
@@ -333,6 +355,10 @@ namespace Pacman
             orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
             cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
 
+            vulnerableRed = false;
+            vulnerableCyan = false;
+            vulnerableOrange = false;
+
             ScoreCounter.Text = "" + score;
       
             speed = 10;
@@ -375,6 +401,10 @@ namespace Pacman
             lives = 3;
             speed = 10;
             ghostSpeed = 4;
+
+             vulnerableRed = false;
+             vulnerableCyan = false;
+             vulnerableOrange = false;
 
             pacman.Left = 301;
             pacman.Top = 535;
@@ -449,6 +479,9 @@ namespace Pacman
             {
                 
                 timeLeft = timeLeft - 1;
+                vulnerableRed = true;
+                vulnerableCyan = true;
+                vulnerableOrange = true;
                 pacmanEats();
                 
             }
@@ -457,11 +490,16 @@ namespace Pacman
                 redGhost.Image = Pacman.Properties.Resources.redGhost3;
                 orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
                 cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+
+                vulnerableRed = false;
+                vulnerableCyan = false;
+                vulnerableOrange = false;
             }
         }
 
         private void pacmanEats()
         {
+
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox)
@@ -474,6 +512,7 @@ namespace Pacman
                             redGhost.Top = 375;
 
                             redGhost.Image = Pacman.Properties.Resources.redGhost3;
+                            vulnerableRed = false;
                         }
                     }
                     if ((string)x.Tag == "ghost" && x.Name == "cyanGhost")
@@ -484,6 +523,7 @@ namespace Pacman
                             cyanGhost.Top = 375;
 
                             cyanGhost.Image = Pacman.Properties.Resources.CyanGhost;
+                            vulnerableCyan = false;
                         }
                     }
                     if ((string)x.Tag == "ghost" && x.Name == "orangeGhost")
@@ -494,6 +534,7 @@ namespace Pacman
                             orangeGhost.Top = 375;
 
                             orangeGhost.Image = Pacman.Properties.Resources.OrangeGhost;
+                            vulnerableOrange = false;
                         }
                     }
                 }
